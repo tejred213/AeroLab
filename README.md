@@ -4,6 +4,10 @@ AeroLab is an interactive, browser-based wind tunnel for simplified road-car sha
 vehicle class, reshape it with engineering parameters, run a simulation, look at the airflow, and see how
 the aerodynamic forces change acceleration, top speed and power demand.
 
+**Live:** <https://aerolab-web.fly.dev>
+
+![AeroLab landing page: a fastback in the wind tunnel with airflow streaks and its Mode A estimate](docs/screenshots/landing.png)
+
 > **AeroLab is an educational and research-oriented tool. It does not replace professional CFD or
 > wind-tunnel testing.** Its numbers are estimates from simplified models with stated assumptions and an
 > explicit uncertainty. They are most trustworthy as *differences between two configurations run with the
@@ -11,23 +15,46 @@ the aerodynamic forces change acceleration, top speed and power demand.
 
 ## Contents
 
-1. [Overview](#overview)
-2. [Architecture](#architecture)
-3. [Installation](#installation)
-4. [Running locally](#running-locally)
-5. [Deployment (Fly.io)](#deployment-flyio)
-6. [Frontend](#frontend)
-7. [Backend](#backend)
-8. [Physics equations](#physics-equations)
-9. [Assumptions](#assumptions)
-10. [Production cars and validation](#production-cars-and-validation)
-11. [Imported 3D models](#imported-3d-models)
-12. [CFD integration](#cfd-integration)
-13. [ML surrogate](#ml-surrogate)
-14. [Optimization](#optimization)
-15. [Testing](#testing)
-16. [Limitations](#limitations)
-17. [Future work](#future-work)
+1. [Screenshots](#screenshots)
+2. [Overview](#overview)
+3. [Architecture](#architecture)
+4. [Installation](#installation)
+5. [Running locally](#running-locally)
+6. [Deployment (Fly.io)](#deployment-flyio)
+7. [Frontend](#frontend)
+8. [Backend](#backend)
+9. [Physics equations](#physics-equations)
+10. [Assumptions](#assumptions)
+11. [Production cars and validation](#production-cars-and-validation)
+12. [Imported 3D models](#imported-3d-models)
+13. [CFD integration](#cfd-integration)
+14. [ML surrogate](#ml-surrogate)
+15. [Optimization](#optimization)
+16. [Testing](#testing)
+17. [Limitations](#limitations)
+18. [Future work](#future-work)
+
+## Screenshots
+
+**The simulator.** A Mode B (reduced-order) run of the Fastback: streamlines around the car, forces on it,
+the result with its uncertainty, and resisting force and Cd against speed.
+
+![Simulator with streamlines, results panel and drag charts](docs/screenshots/simulator.png)
+
+| | |
+| --- | --- |
+| ![Pressure coefficient on the body and the symmetry plane](docs/screenshots/pressure.png) | ![Parameter sweep of the rear spoiler angle: Cd, Cl, drag and top speed](docs/screenshots/sweep.png) |
+| **Pressure.** The pressure coefficient on the body and in the symmetry plane: stagnation at the nose, suction over the roof. | **Parameter sweep.** Cd, Cl, drag and top speed as the rear spoiler angle goes from 0° to 20°. |
+| ![Comparison of an SUV, a sedan and a fastback: drag, downforce, power and acceleration](docs/screenshots/compare.png) | ![Validation of predicted against published drag coefficients for 17 production cars](docs/screenshots/validation.png) |
+| **Compare.** Three configurations side by side: drag, downforce, power required and acceleration. | **Validation.** Predicted against published Cd for 17 production-car look-alikes, with the error statistics. |
+
+![Vehicle library with the generic classes and their reference values](docs/screenshots/library.png)
+
+**Library.** The six generic vehicle classes (and 17 production-car look-alikes further down), each with
+its reference values, ready to open in the simulator.
+
+Taken on 28 October 2026 from the same code as the live site, in a 1440 × 900 window; everything shown was
+computed in the browser (Mode B, coarse grid, 150 km/h).
 
 ## Overview
 
