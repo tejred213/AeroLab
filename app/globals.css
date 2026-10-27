@@ -1,0 +1,776 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces step up from the test section (darkest) to the things you can pick up. */
+  --color-bg: #0b0d10;
+  --color-panel: #14171c;
+  --color-panel-2: #1b1f26;
+  --color-raise: #242a32;
+  --color-line: #262c35;
+  --color-line-strong: #3b4350;
+  --color-ink: #eceff3;
+  --color-ink-2: #b4bbc5;
+  --color-ink-3: #8b95a2;
+  --color-accent: #f2a33a;
+  --color-accent-ink: #1a1206;
+  --color-data: #5cc8f0;
+  --color-ok: #58c88a;
+  --color-warn: #f08a3c;
+  --color-err: #ef6060;
+
+  --font-sans: var(--font-archivo), var(--font-archivo-ext), ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(92 200 240 / 0.28);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  /* Controls share the 8 px corner of the landing page's buttons; panes and cards are 16 px. */
+  button,
+  input,
+  select,
+  textarea {
+    border-radius: 8px;
+  }
+
+  button,
+  a,
+  select,
+  label,
+  input[type="range"] {
+    touch-action: manipulation;
+  }
+}
+
+/* Backdrop of the non-3D pages. */
+.grid-backdrop {
+  background: var(--color-bg);
+}
+
+/* Measurements: fixed-width digits so columns of numbers line up. */
+.num {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* File paths, hashes and solver output. */
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Small heading over a group of controls or a table column. */
+.label {
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--color-ink-3);
+}
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 2px solid var(--color-data);
+  outline-offset: 2px;
+}
+
+/* Native selects: one chevron, drawn the same in every browser. */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%238b95a2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+select:disabled {
+  cursor: not-allowed;
+}
+
+/*
+ * Range inputs. A control can set --fill (0–100 %) to shade the track up to its thumb;
+ * without it the track is plain.
+ */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--color-ink-3) 0 var(--fill, 0%),
+    var(--color-line-strong) var(--fill, 0%) 100%
+  );
+}
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--color-ink-3) 0 var(--fill, 0%),
+    var(--color-line-strong) var(--fill, 0%) 100%
+  );
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: var(--color-ink);
+  border: 2px solid var(--color-panel);
+  box-shadow: 0 0 0 1px var(--color-line-strong);
+  transition: box-shadow 120ms ease-out;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-ink);
+  border: 2px solid var(--color-panel);
+  box-shadow: 0 0 0 1px var(--color-line-strong);
+}
+input[type="range"]:hover::-webkit-slider-thumb,
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px var(--color-data), 0 0 0 4px rgb(92 200 240 / 0.2);
+}
+input[type="range"]:hover::-moz-range-thumb,
+input[type="range"]:focus-visible::-moz-range-thumb {
+  box-shadow: 0 0 0 1px var(--color-data), 0 0 0 4px rgb(92 200 240 / 0.2);
+}
+input[type="range"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Thin scrollbars inside panels */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Scrolls without showing a bar (rows of buttons on a phone). */
+.scroll-none {
+  scrollbar-width: none;
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none;
+}
+
+/*
+ * Landing page: a white studio. The live scene fills the first screen; scrolling holds it in place,
+ * lifts it a little and brings the project name up beneath it. Inside .landing the colour tokens are
+ * remapped for a light surface, so the shared utilities and components keep working there.
+ */
+:root:has(.landing) {
+  color-scheme: light;
+}
+body:has(.landing) {
+  background: #ffffff;
+}
+
+.landing {
+  --color-bg: #ffffff;
+  --color-panel: #ffffff;
+  --color-panel-2: #f3f5f7;
+  --color-raise: #e9ecf0;
+  --color-line: #e2e6eb;
+  --color-line-strong: #c5ccd5;
+  --color-ink: #0b0d10;
+  --color-ink-2: #434a54;
+  --color-ink-3: #68717d;
+  /* Darker steps of the same hues, for text and badges on white. */
+  --color-accent: #9a5a00;
+  --color-data: #0b6aa6;
+  --color-ok: #1c7a49;
+  --color-warn: #b0501a;
+  --color-err: #c23434;
+  /* How far the scene has risen once the name is in place. */
+  --landing-lift: 12svh;
+
+  background: #ffffff;
+  color: var(--color-ink);
+  font-size: 15px;
+}
+
+/* A dark band inside the landing page gets the app's own tokens back. */
+.landing .on-dark {
+  --color-bg: #0b0d10;
+  --color-panel: #14171c;
+  --color-panel-2: #1b1f26;
+  --color-raise: #242a32;
+  --color-line: #262c35;
+  --color-line-strong: #3b4350;
+  --color-ink: #eceff3;
+  --color-ink-2: #b4bbc5;
+  --color-ink-3: #8b95a2;
+  --color-accent: #f2a33a;
+  --color-data: #5cc8f0;
+}
+
+.landing-nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 30;
+  background: rgb(255 255 255 / 0.82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.landing-pin {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.landing-scene {
+  position: absolute;
+  inset: 0;
+  transform: translateY(calc(-1 * var(--landing-lift)));
+}
+/* One car is exchanged for the next while the scene is faded out to the white of the page. */
+.landing-scene {
+  transition: opacity 420ms ease-out;
+}
+.landing-scene[data-veiled="true"] {
+  opacity: 0;
+  transition: opacity 240ms ease-in;
+}
+/* A vertical swipe over the scene scrolls the page; a sideways drag turns the car. */
+.landing-scene div,
+.landing-scene canvas {
+  touch-action: pan-y !important;
+}
+
+.landing-caption {
+  position: absolute;
+  top: 76px;
+  left: 32px;
+  z-index: 10;
+  /* Narrower where the figures block shares the top of the screen with it. */
+  max-width: min(300px, calc(100vw - 420px));
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-ink-3);
+  pointer-events: none;
+}
+
+.landing-name {
+  position: absolute;
+  inset: auto 0 6.5svh 0;
+  z-index: 10;
+  padding-inline: 20px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.landing-wordmark {
+  font-size: clamp(3.5rem, min(18vw, 27svh), 20rem);
+  line-height: 0.8;
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: -0.04em;
+  color: var(--color-ink);
+}
+
+.landing-cue {
+  display: none;
+  position: absolute;
+  inset: auto 0 3.5svh 0;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-ink-3);
+  pointer-events: none;
+}
+
+/*
+ * Figures for the car shown. By default a compact block under the navigation, clear of the car;
+ * on a wide, tall window it stands beside the car and rises with it.
+ */
+.landing-readout {
+  position: absolute;
+  top: 72px;
+  right: 32px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 340px;
+  padding: 14px 16px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: rgb(255 255 255 / 0.78);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.landing-readout-car {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.landing-readout-name,
+.landing-readout-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+/* Spelled out only where the name has a line to itself. */
+.landing-readout-kind {
+  display: none;
+}
+.landing-readout-figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+  /* Room for two rows, so the block keeps its size while the figures are being computed. */
+  min-height: 84px;
+  animation: landing-readout-in 320ms ease-out both;
+}
+.landing-readout-value {
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+.landing-readout-value sup {
+  font-size: 0.62em;
+}
+/* One bar per group; the one showing fills up as its turn runs out. Each is a button. */
+.landing-readout-steps {
+  display: flex;
+  gap: 4px;
+}
+.landing-readout-steps button {
+  flex: 1;
+  padding: 6px 0;
+  border-radius: 4px;
+}
+.landing-readout-steps button > span {
+  display: block;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--color-line);
+  transition: background-color 150ms;
+}
+.landing-readout-steps button:hover > span {
+  background: var(--color-line-strong);
+}
+.landing-readout-steps button > span > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--color-ink);
+  /* Set directly five times a second; each step is under a pixel, so no easing is needed. */
+  transform-origin: left;
+}
+/* The bars and the way into the simulator share a row; on the tall layout they stack. */
+.landing-readout-foot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.landing-readout-steps {
+  flex: 1;
+}
+.landing-readout-open {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--color-line-strong);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 150ms;
+}
+.landing-readout-open:hover {
+  text-decoration-color: currentColor;
+}
+@keyframes landing-readout-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (min-width: 1180px) and (min-height: 800px) {
+  .landing-readout {
+    top: 50%;
+    width: 264px;
+    gap: 14px;
+    padding: 18px 20px 14px;
+    translate: 0 -50%;
+    transform: translateY(calc(-1 * var(--landing-lift)));
+  }
+  .landing-readout-car {
+    align-items: flex-start;
+  }
+  .landing-readout-name,
+  .landing-readout-heading {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .landing-readout-kind {
+    display: inline;
+  }
+  .landing-readout-figures {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    min-height: 224px;
+  }
+  .landing-readout-value {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .landing-readout-foot {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .landing-readout-open {
+    height: 34px;
+    border: 1px solid var(--color-line-strong);
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 150ms, border-color 150ms;
+  }
+  .landing-readout-open:hover {
+    border-color: var(--color-ink-3);
+    background: var(--color-panel-2);
+  }
+}
+
+@media (max-width: 640px) {
+  .landing {
+    --landing-lift: 2svh;
+  }
+  /*
+   * A full-height canvas this narrow would crop the car, so the scene takes the upper part of the
+   * screen and fades out at its top and bottom edges instead of ending in a line.
+   */
+  .landing-scene {
+    inset: 23svh 0 auto 0;
+    height: 58svh;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 80%, transparent);
+  }
+  .landing-caption {
+    top: 62px;
+    left: 16px;
+    right: 16px;
+    max-width: none;
+    font-size: 11px;
+  }
+  .landing-readout {
+    top: 122px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    gap: 4px;
+    padding: 6px 12px 4px;
+    border-radius: 12px;
+  }
+  .landing-readout-figures {
+    gap: 4px 16px;
+    min-height: 72px;
+  }
+  .landing-readout-value {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/*
+ * The scroll-linked part. Without support for scroll timelines, or when motion is unwanted, the
+ * rules above already show the finished arrangement: scene raised, name in place.
+ */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .landing-stage {
+      height: 180svh;
+    }
+    .landing-scene {
+      animation: landing-scene linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 80svh;
+    }
+    .landing-name {
+      animation: landing-name linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 80svh;
+    }
+    @media (min-width: 1180px) and (min-height: 800px) {
+      .landing-readout {
+        animation: landing-scene linear both;
+        animation-timeline: scroll(root block);
+        animation-range: 0 80svh;
+      }
+    }
+    .landing-cue {
+      display: flex;
+      animation: landing-leave linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 18svh;
+    }
+    .landing-brand {
+      animation: landing-arrive linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 150svh 180svh;
+    }
+  }
+}
+
+@keyframes landing-scene {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-1 * var(--landing-lift)));
+  }
+}
+@keyframes landing-name {
+  0%,
+  22% {
+    opacity: 0;
+  }
+  0% {
+    transform: translateY(30svh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes landing-leave {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes landing-arrive {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*
+ * Hand-over between the landing page and the app (lib/state/pageTransition). Leaving, the landing
+ * page darkens to the app's background while the scene eases a little closer; the next page then
+ * appears on that same dark surface with its parts settling in from their own edges.
+ */
+.landing-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0d10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 440ms cubic-bezier(0.4, 0, 0.8, 0.4);
+}
+/* Arriving from the app: dark on the first frame, then lifted. */
+.landing-curtain[data-lowered="true"] {
+  opacity: 1;
+  transition: none;
+}
+.landing[data-leaving] .landing-curtain {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Shown only if the simulator takes a moment; the simulator shows the same words while it starts. */
+.landing-curtain-note {
+  font-size: 13px;
+  color: #8b95a2;
+  opacity: 0;
+}
+.landing[data-leaving="simulator"] .landing-curtain-note {
+  opacity: 1;
+  transition: opacity 200ms 700ms;
+}
+.landing-pin {
+  transition: transform 520ms cubic-bezier(0.3, 0, 0.6, 1);
+}
+.landing[data-leaving] .landing-pin {
+  transform: scale(1.05);
+}
+
+/* Arriving from the landing page: the header drops in and every part of the page settles. */
+header[data-arriving="surface"] {
+  animation: arrive-down 460ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+header[data-arriving="surface"] ~ * {
+  animation: arrive-fade 520ms 60ms ease-out both;
+}
+/* The simulator: each panel comes in from its own edge, the tunnel last. */
+header[data-arriving="surface"] ~ * [data-arrive="left"] {
+  animation: arrive-right 520ms 80ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+header[data-arriving="surface"] ~ * [data-arrive="right"] {
+  animation: arrive-left 520ms 80ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+header[data-arriving="surface"] ~ [data-arrive="up"] {
+  animation: arrive-up 520ms 140ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+header[data-arriving="surface"] ~ * [data-arrive="fade"] {
+  animation: arrive-fade 700ms 160ms ease-out both;
+}
+
+/*
+ * Between two pages of the app the header stays where it is. The content under it leaves upwards,
+ * and the next page's content rises into place.
+ */
+html[data-leaving="page"] header[data-app-header] ~ * {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 150ms ease-in,
+    transform 150ms ease-in;
+}
+header[data-arriving="page"] ~ * {
+  animation: arrive-page 380ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+/* Leaving the app for the landing page, or a page without the header: everything fades to the background. */
+html[data-leaving="surface"] body {
+  opacity: 0;
+  transition: opacity 220ms ease-in;
+}
+.report-page[data-arriving] {
+  animation: arrive-fade 380ms ease-out both;
+}
+@keyframes arrive-page {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes arrive-fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes arrive-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@keyframes arrive-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+@keyframes arrive-right {
+  from {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+}
+@keyframes arrive-left {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print: used by the engineering report (Save as PDF). */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-break {
+    break-before: page;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+}

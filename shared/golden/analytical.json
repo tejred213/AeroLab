@@ -1,0 +1,4694 @@
+{
+ "modelVersion": "1.1.0",
+ "cases": [
+  {
+   "name": "hatchback default",
+   "vehicleId": "hatchback",
+   "config": {
+    "vehicleId": "hatchback",
+    "reference": {
+     "cd": 0.31,
+     "cl": 0.1
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.62,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.75,
+     "width": 1.79,
+     "roofHeight": 1.31,
+     "beltHeight": 0.78,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.86,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.82,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 50,
+     "rearDeckLength": 0,
+     "frontTaper": 0.12,
+     "rearTaper": 0.06,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.62,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.75,
+     "width": 1.79,
+     "roofHeight": 1.31,
+     "beltHeight": 0.78,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.86,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.82,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 50,
+     "rearDeckLength": 0,
+     "frontTaper": 0.12,
+     "rearTaper": 0.06,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.3097209250729083,
+     "cl": 0.1,
+     "clFront": 0.04864751436377857,
+     "clRear": 0.05135248563622143,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02009176748548639,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.3443642591460154
+    },
+    "uncertainty": {
+     "cd": 0.012389622794442199,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 772.0963408027354,
+     "lift": 249.28775497521968,
+     "downforce": -249.28775497521968,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 12123372.137355223
+    },
+    "calibration": {
+     "cdRaw": 0.33767093308719637,
+     "clRaw": 0.11714706590811287,
+     "cdOffset": -0.02795000801428804,
+     "clOffset": -0.017147065908112866
+    },
+    "rearFlow": {
+     "separationFraction": 0.9996646498695336,
+     "effectiveSlantDeg": 49.999999999999986,
+     "separationX": 3.864143610057014,
+     "baseArea": 1.9826943664953276,
+     "basePressureCoefficient": -0.1391875518031571,
+     "wakeLength": 3.355723079876131,
+     "vortexDrag": 1.5374216997995062e-8
+    },
+    "metrics": {
+     "length": 4.25,
+     "overallHeight": 1.4500000000000002,
+     "frontalArea": 2.3443642591460154,
+     "sideArea": 4.772876939101586,
+     "sideAreaCentroidX": 2.325902366503495,
+     "wettedArea": 15.105792604232514,
+     "groundClearance": 0.14,
+     "roofLength": 2.1865528304795223,
+     "trackWidth": 1.5767903114186852,
+     "effectiveSlantDeg": 49.999999999999986
+    },
+    "drag": {
+     "forebody": 0.054072052910669535,
+     "base": 0.11771480211309943,
+     "vortex": 1.5374216997995062e-8,
+     "underbody": 0.0435,
+     "wheels": 0.06419642443022598,
+     "friction": 0.02009176748548639,
+     "cooling": 0.02025,
+     "mirrors": 0.012161932553256937,
+     "detail": 0.004,
+     "diffuser": 0.0016839382202410845,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.02795000801428804
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.028235294117647025,
+     "slant": 0.03470325414915925,
+     "underbody": -0.05175866385668437,
+     "diffuser": -0.014032818502009037,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.017147065908112866
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 59.165980313233604,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.904221377894251
+     },
+     {
+      "target": 100,
+      "time": 9.560382985499349
+     },
+     {
+      "target": 160,
+      "time": 22.8806485688846
+     },
+     {
+      "target": 200,
+      "time": 51.36789565082737
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 25.945002649889375,
+    "power100": 13094.800686255161,
+    "power200": 82816.21143652295,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 772.0963408027354,
+     "rolling": 124.9935724502478,
+     "grade": 0,
+     "total": 897.0899132529833,
+     "powerRequired": 37378.74638554097
+    }
+   }
+  },
+  {
+   "name": "sedan default",
+   "vehicleId": "sedan",
+   "config": {
+    "vehicleId": "sedan",
+    "reference": {
+     "cd": 0.28,
+     "cl": 0.12
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.279709414055507,
+     "cl": 0.12,
+     "clFront": 0.035029284994738376,
+     "clRear": 0.08497071500526163,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.020920493618498112,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.392170079996828
+    },
+    "uncertainty": {
+     "cd": 0.011189319914356916,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 711.5001440390587,
+     "lift": 305.24541897522187,
+     "downforce": -305.24541897522187,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13549651.21233819
+    },
+    "calibration": {
+     "cdRaw": 0.27803754323047597,
+     "clRaw": 0.12862735346510534,
+     "cdOffset": 0.0016718708250310077,
+     "clOffset": -0.008627353465105347
+    },
+    "rearFlow": {
+     "separationFraction": 0.0021753488424173933,
+     "effectiveSlantDeg": 14.679028695917134,
+     "separationX": 4.747093488413022,
+     "baseArea": 1.4010159810679337,
+     "basePressureCoefficient": -0.09951866061414182,
+     "wakeLength": 2.2659656210109453,
+     "vortexDrag": 0.007986748857322043
+    },
+    "metrics": {
+     "length": 4.75,
+     "overallHeight": 1.44,
+     "frontalArea": 2.392170079996828,
+     "sideArea": 4.961293627066826,
+     "sideAreaCentroidX": 2.537941686661011,
+     "wettedArea": 16.410627963818897,
+     "groundClearance": 0.14,
+     "roofLength": 1.4551747490346019,
+     "trackWidth": 1.5915104867431735,
+     "effectiveSlantDeg": 14.679028695917134
+    },
+    "drag": {
+     "forebody": 0.0490534499796223,
+     "base": 0.05828483313154452,
+     "vortex": 0.007986748857322043,
+     "underbody": 0.036750000000000005,
+     "wheels": 0.06587742289637238,
+     "friction": 0.020920493618498112,
+     "cooling": 0.02025,
+     "mirrors": 0.011918884964917633,
+     "detail": 0.004,
+     "diffuser": 0.00299570978219896,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0016718708250310077
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.006315789473684219,
+     "slant": 0.10392468589389052,
+     "underbody": -0.06401729477010962,
+     "diffuser": -0.024964248184991336,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.008627353465105347
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 66.64701774758919,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.489762824457195
+     },
+     {
+      "target": 100,
+      "time": 8.412590737673847
+     },
+     {
+      "target": 160,
+      "time": 18.775942438948416
+     },
+     {
+      "target": 200,
+      "time": 32.589560666325994
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 30.08451464613927,
+    "power100": 13024.072020061185,
+    "power200": 78120.88858472621,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 711.5001440390587,
+     "rolling": 148.95062081024776,
+     "grade": 0,
+     "total": 860.4507648493064,
+     "powerRequired": 35852.11520205444
+    }
+   }
+  },
+  {
+   "name": "sports coupe default",
+   "vehicleId": "sports-coupe",
+   "config": {
+    "vehicleId": "sports-coupe",
+    "reference": {
+     "cd": 0.31,
+     "cl": -0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.55,
+     "frontOverhang": 0.95,
+     "rearOverhang": 0.95,
+     "width": 1.87,
+     "roofHeight": 1.175,
+     "beltHeight": 0.72,
+     "hoodLength": 1.35,
+     "hoodHeight": 0.74,
+     "frontBumperHeight": 0.48,
+     "rearBumperHeight": 0.86,
+     "windshieldAngle": 25,
+     "rearWindowAngle": 18,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.16,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.74,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.7,
+     "diffuserAngle": 7,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0.03,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.06,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0.02,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.55,
+     "frontOverhang": 0.95,
+     "rearOverhang": 0.95,
+     "width": 1.87,
+     "roofHeight": 1.175,
+     "beltHeight": 0.72,
+     "hoodLength": 1.35,
+     "hoodHeight": 0.74,
+     "frontBumperHeight": 0.48,
+     "rearBumperHeight": 0.86,
+     "windshieldAngle": 25,
+     "rearWindowAngle": 18,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.16,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.74,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.7,
+     "diffuserAngle": 7,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0.03,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.06,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0.02,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.055
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.30971593738539815,
+     "cl": -0.08,
+     "clFront": -0.007118177114439257,
+     "clRear": -0.07288182288556075,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.020450851903385487,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.17635797048555
+    },
+    "uncertainty": {
+     "cd": 0.012389451637787645,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 716.7533622660416,
+     "lift": -185.1382575444653,
+     "downforce": 185.1382575444653,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 12693883.76734841
+    },
+    "calibration": {
+     "cdRaw": 0.2845565834917932,
+     "clRaw": -0.08961451695420519,
+     "cdOffset": 0.025159353893604963,
+     "clOffset": 0.00961451695420519
+    },
+    "rearFlow": {
+     "separationFraction": 0.0017895188641388377,
+     "effectiveSlantDeg": 14.189956589304233,
+     "separationX": 4.447982962050893,
+     "baseArea": 1.1819081942374396,
+     "basePressureCoefficient": -0.09686299106401769,
+     "wakeLength": 2.0448286012637222,
+     "vortexDrag": 0.006371150337722624
+    },
+    "metrics": {
+     "length": 4.45,
+     "overallHeight": 1.29,
+     "frontalArea": 2.17635797048555,
+     "sideArea": 4.042862211419881,
+     "sideAreaCentroidX": 2.4504380786796682,
+     "wettedArea": 14.405761905827038,
+     "groundClearance": 0.095,
+     "roofLength": 1.104334889098681,
+     "trackWidth": 1.6021146943413143,
+     "effectiveSlantDeg": 14.189956589304233
+    },
+    "drag": {
+     "forebody": 0.04221866754178068,
+     "base": 0.05260309398061431,
+     "vortex": 0.006371150337722624,
+     "underbody": 0.0198125,
+     "wheels": 0.08393302718127504,
+     "friction": 0.020450851903385487,
+     "cooling": 0.02475,
+     "mirrors": 0.011823459352258635,
+     "detail": 0.004,
+     "diffuser": 0.01053183193720416,
+     "spoiler": 0.005723510959072262,
+     "wing": 0,
+     "splitter": 0.002338490298479963,
+     "yaw": 0,
+     "calibration": 0.025159353893604963
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01595505617977533,
+     "slant": 0.12492691704868956,
+     "underbody": -0.11566391647944298,
+     "diffuser": -0.087765266143368,
+     "spoiler": -0.07719909180469166,
+     "wing": 0,
+     "splitter": -0.03795810339561679,
+     "yaw": 0,
+     "calibration": 0.00961451695420519
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 82.88788813598762,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.5081138336987525
+     },
+     {
+      "target": 100,
+      "time": 5.83794742634035
+     },
+     {
+      "target": 160,
+      "time": 10.867998808767961
+     },
+     {
+      "target": 200,
+      "time": 16.289642612061762
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 33.9750781124053,
+    "power100": 13567.84405584356,
+    "power200": 80019.31485667026,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 716.7533622660416,
+     "rolling": 169.23990333298912,
+     "grade": 0,
+     "total": 885.9932655990307,
+     "powerRequired": 36916.386066626284
+    }
+   }
+  },
+  {
+   "name": "suv default",
+   "vehicleId": "suv",
+   "config": {
+    "vehicleId": "suv",
+    "reference": {
+     "cd": 0.36,
+     "cl": 0.14
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.35972770956347566,
+     "cl": 0.14,
+     "clFront": 0.0701406486639511,
+     "clRear": 0.06985935133604891,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.019603323724496004,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.913805797376946
+    },
+    "uncertainty": {
+     "cd": 0.014389752449743897,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 1114.5777016177854,
+     "lift": 433.77497501052477,
+     "downforce": -433.77497501052477,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13407023.30483989
+    },
+    "calibration": {
+     "cdRaw": 0.3945716235689957,
+     "clRaw": 0.13689263296755705,
+     "cdOffset": -0.03484391400552006,
+     "clOffset": 0.0031073670324429647
+    },
+    "rearFlow": {
+     "separationFraction": 0.9999972392350497,
+     "effectiveSlantDeg": 61.99999999999997,
+     "separationX": 4.450097257043742,
+     "baseArea": 2.526109944238347,
+     "basePressureCoefficient": -0.14279989487007066,
+     "wakeLength": 3.8731554610723453,
+     "vortexDrag": 9.591677209537803e-13
+    },
+    "metrics": {
+     "length": 4.699999999999999,
+     "overallHeight": 1.68,
+     "frontalArea": 2.913805797376946,
+     "sideArea": 6.129225276432437,
+     "sideAreaCentroidX": 2.5712705620456298,
+     "wettedArea": 18.69099334374941,
+     "groundClearance": 0.2,
+     "roofLength": 2.62636003412625,
+     "trackWidth": 1.6930918358108296,
+     "effectiveSlantDeg": 61.99999999999997
+    },
+    "drag": {
+     "forebody": 0.06705335122146114,
+     "base": 0.12379968314710929,
+     "vortex": 9.591677209537803e-13,
+     "underbody": 0.064125,
+     "wheels": 0.07653471062554229,
+     "friction": 0.019603323724496004,
+     "cooling": 0.02475,
+     "mirrors": 0.014090602756354048,
+     "detail": 0.004,
+     "diffuser": 0.000614952093073761,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.03484391400552006
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.034893617021276635,
+     "slant": 0.020768244870712466,
+     "underbody": -0.03364462814881737,
+     "diffuser": -0.005124600775614676,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0031073670324429647
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 59.38561697301634,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.810181903011344
+     },
+     {
+      "target": 100,
+      "time": 8.2787217265048
+     },
+     {
+      "target": 160,
+      "time": 21.135811043239944
+     },
+     {
+      "target": 200,
+      "time": 45.979394601787526
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 44.546124499509006,
+    "power100": 19457.958107553382,
+    "power200": 120661.6838303465,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 1114.5777016177854,
+     "rolling": 200.1874602748842,
+     "grade": 0,
+     "total": 1314.7651618926695,
+     "powerRequired": 54781.881745527906
+    }
+   }
+  },
+  {
+   "name": "fastback default",
+   "vehicleId": "fastback",
+   "config": {
+    "vehicleId": "fastback",
+    "reference": {
+     "cd": 0.27,
+     "cl": 0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.13,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 15,
+     "spoilerHeight": 0.04,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.13,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 15,
+     "spoilerHeight": 0.04,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.26970336417931795,
+     "cl": 0.08,
+     "clFront": 0.02920649746771975,
+     "clRear": 0.05079350253228025,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.021356049427730867,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.381056593957921
+    },
+    "uncertainty": {
+     "cd": 0.010789154074437661,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 682.8604130922666,
+     "lift": 202.55154478184488,
+     "downforce": -202.55154478184488,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13692279.119836485
+    },
+    "calibration": {
+     "cdRaw": 0.2706175308560691,
+     "clRaw": 0.09859015139191663,
+     "cdOffset": -0.0009141666767511492,
+     "clOffset": -0.018590151391916623
+    },
+    "rearFlow": {
+     "separationFraction": 0.0027756507001405494,
+     "effectiveSlantDeg": 15.289773593068078,
+     "separationX": 4.796852511164212,
+     "baseArea": 1.3516078900264175,
+     "basePressureCoefficient": -0.09689770290464496,
+     "wakeLength": 2.2802639940297706,
+     "vortexDrag": 0.009152870730432167
+    },
+    "metrics": {
+     "length": 4.8,
+     "overallHeight": 1.4,
+     "frontalArea": 2.381056593957921,
+     "sideArea": 4.992704984188692,
+     "sideAreaCentroidX": 2.6122862491973144,
+     "wettedArea": 16.709420148033526,
+     "groundClearance": 0.13,
+     "roofLength": 1.6417392759577534,
+     "trackWidth": 1.6062236926020408,
+     "effectiveSlantDeg": 15.289773593068078
+    },
+    "drag": {
+     "forebody": 0.04633677911795925,
+     "base": 0.05500402640730695,
+     "vortex": 0.009152870730432167,
+     "underbody": 0.0297125,
+     "wheels": 0.06820439317639344,
+     "friction": 0.021356049427730867,
+     "cooling": 0.02025,
+     "mirrors": 0.011974515881878228,
+     "detail": 0.004,
+     "diffuser": 0.004862065592230482,
+     "spoiler": -0.00023566947786226883,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.0009141666767511492
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01541666666666669,
+     "slant": 0.14472881829910395,
+     "underbody": -0.07745080890431817,
+     "diffuser": -0.04051721326858735,
+     "spoiler": -0.032753978067615125,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.018590151391916623
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 74.54173191767018,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.2969456060647
+     },
+     {
+      "target": 100,
+      "time": 7.5056258645943625
+     },
+     {
+      "target": 160,
+      "time": 15.095636925919544
+     },
+     {
+      "target": 200,
+      "time": 23.823350646008745
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 31.199235213086922,
+    "power100": 12956.472518514533,
+    "power200": 75933.788567063,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 682.8604130922666,
+     "rolling": 159.78420955218155,
+     "grade": 0,
+     "total": 842.6446226444482,
+     "powerRequired": 35110.192610185346
+    }
+   }
+  },
+  {
+   "name": "generic ev default",
+   "vehicleId": "generic-ev",
+   "config": {
+    "vehicleId": "generic-ev",
+    "reference": {
+     "cd": 0.23,
+     "cl": 0.05
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.85,
+     "rearOverhang": 0.95,
+     "width": 1.85,
+     "roofHeight": 1.3,
+     "beltHeight": 0.82,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.96,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.18,
+     "rearTaper": 0.12,
+     "cabinWidthRatio": 0.77,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.03,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.69,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.018
+    },
+    "geometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.85,
+     "rearOverhang": 0.95,
+     "width": 1.85,
+     "roofHeight": 1.3,
+     "beltHeight": 0.82,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.96,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.18,
+     "rearTaper": 0.12,
+     "cabinWidthRatio": 0.77,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.03,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.69,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.018
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.22970653400763813,
+     "cl": 0.05,
+     "clFront": 0.03922176139555602,
+     "clRear": 0.010778238604443983,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.021127840271709258,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.4041193022095775
+    },
+    "uncertainty": {
+     "cd": 0.009189432920341264,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 587.2259226410824,
+     "lift": 127.8209009547713,
+     "downforce": -127.8209009547713,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13407023.304839894
+    },
+    "calibration": {
+     "cdRaw": 0.22712991792659348,
+     "clRaw": 0.03952553280838241,
+     "cdOffset": 0.002576616081044647,
+     "clOffset": 0.010474467191617591
+    },
+    "rearFlow": {
+     "separationFraction": 0.004360819803600827,
+     "effectiveSlantDeg": 16.42318786241096,
+     "separationX": 4.695413647317662,
+     "baseArea": 1.3181301618310142,
+     "basePressureCoefficient": -0.09430931447007529,
+     "wakeLength": 2.2905715045592956,
+     "vortexDrag": 0.011571026866787567
+    },
+    "metrics": {
+     "length": 4.7,
+     "overallHeight": 1.44,
+     "frontalArea": 2.4041193022095775,
+     "sideArea": 5.135873240662743,
+     "sideAreaCentroidX": 2.5196884237135877,
+     "wettedArea": 16.62084839710703,
+     "groundClearance": 0.14,
+     "roofLength": 1.8166513480899695,
+     "trackWidth": 1.55524540377491,
+     "effectiveSlantDeg": 16.42318786241096
+    },
+    "drag": {
+     "forebody": 0.04390491403515209,
+     "base": 0.051707896455204926,
+     "vortex": 0.011571026866787567,
+     "underbody": 0.014250000000000002,
+     "wheels": 0.05215544616673341,
+     "friction": 0.021127840271709258,
+     "cooling": 0.0081,
+     "mirrors": 0.011859644391938122,
+     "detail": 0.004,
+     "diffuser": 0.009214594581305005,
+     "spoiler": -0.0007614448422368879,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.002576616081044647
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.003404255319148952,
+     "slant": 0.12401553041810595,
+     "underbody": -0.10487939781486044,
+     "diffuser": -0.07678828817754171,
+     "spoiler": -0.019418056298172427,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.010474467191617591
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 64.22811647339154,
+    "topSpeedLimit": "motor-rpm",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.2692897557292824
+     },
+     {
+      "target": 100,
+      "time": 5.884532691677722
+     },
+     {
+      "target": 160,
+      "time": 12.762800744254541
+     },
+     {
+      "target": 200,
+      "time": 20.345436430725325
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 31.449512631281777,
+    "power100": 11325.027842456855,
+    "power200": 65661.60930168428,
+    "rangeAt100": 609270.0252914445,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 587.2259226410824,
+     "rolling": 144.1158527923618,
+     "grade": 0,
+     "total": 731.3417754334442,
+     "powerRequired": 30472.573976393513
+    }
+   }
+  },
+  {
+   "name": "fastback low ride",
+   "vehicleId": "fastback",
+   "config": {
+    "vehicleId": "fastback",
+    "reference": {
+     "cd": 0.27,
+     "cl": 0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.13,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 15,
+     "spoilerHeight": 0.04,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.07,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 15,
+     "spoilerHeight": 0.04,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.2478127035722548,
+     "cl": 0.017259780879781812,
+     "clFront": 0.0037906592312866964,
+     "clRear": 0.013469121648495116,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02162303902765309,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.3516565939579217
+    },
+    "uncertainty": {
+     "cd": 0.014877057786270218,
+     "cl": 0.04340603384108306
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 619.6883386878542,
+     "lift": 43.16035774328187,
+     "downforce": -43.16035774328187,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13692279.119836485
+    },
+    "calibration": {
+     "cdRaw": 0.24872687024900594,
+     "clRaw": 0.035849932271698436,
+     "cdOffset": -0.0009141666767511492,
+     "clOffset": -0.018590151391916623
+    },
+    "rearFlow": {
+     "separationFraction": 0.0027756507001405494,
+     "effectiveSlantDeg": 15.289773593068078,
+     "separationX": 4.796852511164212,
+     "baseArea": 1.3516078900264175,
+     "basePressureCoefficient": -0.09689770290464496,
+     "wakeLength": 2.2802639940297706,
+     "vortexDrag": 0.009267298321674052
+    },
+    "metrics": {
+     "length": 4.8,
+     "overallHeight": 1.34,
+     "frontalArea": 2.3516565939579217,
+     "sideArea": 4.935207543180494,
+     "sideAreaCentroidX": 2.6153420048081033,
+     "wettedArea": 16.709420148033526,
+     "groundClearance": 0.07,
+     "roofLength": 1.6417392759577534,
+     "trackWidth": 1.6062236926020408,
+     "effectiveSlantDeg": 15.289773593068078
+    },
+    "drag": {
+     "forebody": 0.04633677911795925,
+     "base": 0.05569167713851049,
+     "vortex": 0.009267298321674052,
+     "underbody": 0.0144875,
+     "wheels": 0.0590556123144718,
+     "friction": 0.02162303902765309,
+     "cooling": 0.02025,
+     "mirrors": 0.012124219187978163,
+     "detail": 0.004,
+     "diffuser": 0.006062922192830173,
+     "spoiler": -0.00017217705207103404,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.0009141666767511492
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01541666666666669,
+     "slant": 0.14653819270730875,
+     "underbody": -0.13161633568376296,
+     "diffuser": -0.05052435160691811,
+     "spoiler": -0.03313090647826258,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.018590151391916623
+    },
+    "warnings": [
+     "CLEARANCE_BELOW_LIMIT"
+    ],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 77.5807242159442,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.293122978893849
+     },
+     {
+      "target": 100,
+      "time": 7.492654991097117
+     },
+     {
+      "target": 160,
+      "time": 14.985286449265677
+     },
+     {
+      "target": 200,
+      "time": 23.377270342512972
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 31.22326991856653,
+    "power100": 12196.248289699384,
+    "power200": 69851.99473654183,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 619.6883386878542,
+     "rolling": 161.37812142256718,
+     "grade": 0,
+     "total": 781.0664601104213,
+     "powerRequired": 32544.435837934223
+    }
+   }
+  },
+  {
+   "name": "fastback spoiler and wing",
+   "vehicleId": "fastback",
+   "config": {
+    "vehicleId": "fastback",
+    "reference": {
+     "cd": 0.27,
+     "cl": 0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.13,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 15,
+     "spoilerHeight": 0.04,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.9,
+     "rearOverhang": 1,
+     "width": 1.88,
+     "roofHeight": 1.27,
+     "beltHeight": 0.78,
+     "hoodLength": 1.2,
+     "hoodHeight": 0.82,
+     "frontBumperHeight": 0.54,
+     "rearBumperHeight": 0.93,
+     "windshieldAngle": 27,
+     "rearWindowAngle": 17,
+     "rearDeckLength": 0.12,
+     "frontTaper": 0.15,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.13,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.55,
+     "diffuserAngle": 5,
+     "diffuserLength": 0.6,
+     "splitterExtension": 0,
+     "spoilerAngle": 35,
+     "spoilerHeight": 0.09,
+     "spoilerWidth": 1.3,
+     "wingChord": 0.28,
+     "wingAngle": 11,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.68,
+     "tireWidth": 0.245,
+     "wheelExposure": 0.4,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.65,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.3033323053707346,
+     "cl": -0.13308820533467142,
+     "clFront": 0.07804295094006326,
+     "clRear": -0.21113115627473467,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02135600248910717,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.381061827311847
+    },
+    "uncertainty": {
+     "cd": 0.02061498060397861,
+     "cl": 0.1106871528822915
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 768.0070259469993,
+     "lift": -336.9660104049241,
+     "downforce": 336.9660104049241,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13692279.119836485
+    },
+    "calibration": {
+     "cdRaw": 0.3042464720474857,
+     "clRaw": -0.11449805394275481,
+     "cdOffset": -0.0009141666767511492,
+     "clOffset": -0.018590151391916623
+    },
+    "rearFlow": {
+     "separationFraction": 0.0027756507001405494,
+     "effectiveSlantDeg": 15.289773593068078,
+     "separationX": 4.796852511164212,
+     "baseArea": 1.3516078900264175,
+     "basePressureCoefficient": -0.09689770290464496,
+     "wakeLength": 2.387265872942792,
+     "vortexDrag": 0.009152850613267875
+    },
+    "metrics": {
+     "length": 4.8,
+     "overallHeight": 1.4,
+     "frontalArea": 2.381061827311847,
+     "sideArea": 4.992704984188692,
+     "sideAreaCentroidX": 2.6122862491973144,
+     "wettedArea": 16.709420148033526,
+     "groundClearance": 0.13,
+     "roofLength": 1.6417392759577534,
+     "trackWidth": 1.6062236926020408,
+     "effectiveSlantDeg": 15.289773593068078
+    },
+    "drag": {
+     "forebody": 0.04633677911795925,
+     "base": 0.05500390551353837,
+     "vortex": 0.009152850613267875,
+     "underbody": 0.0297125,
+     "wheels": 0.0682042432694382,
+     "friction": 0.02135600248910717,
+     "cooling": 0.02025,
+     "mirrors": 0.011974489562998566,
+     "detail": 0.004,
+     "diffuser": 0.004862065592230482,
+     "spoiler": 0.018627915474797,
+     "wing": 0.014765720414148854,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.0009141666767511492
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01541666666666669,
+     "slant": 0.14472850019853187,
+     "underbody": -0.07745080890431817,
+     "diffuser": -0.04051721326858735,
+     "spoiler": -0.12146402669066934,
+     "wing": -0.12437783861104511,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.018590151391916623
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 71.57507182242693,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.282434167233735
+     },
+     {
+      "target": 100,
+      "time": 7.504810685476511
+     },
+     {
+      "target": 160,
+      "time": 15.243484623615451
+     },
+     {
+      "target": 200,
+      "time": 24.520744464240412
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 31.289530427131922,
+    "power100": 14074.272375386137,
+    "power200": 84876.18742203586,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 768.0070259469993,
+     "rolling": 165.17938510404926,
+     "grade": 0,
+     "total": 933.1864110510486,
+     "powerRequired": 38882.76712712703
+    }
+   }
+  },
+  {
+   "name": "sedan steep rear window",
+   "vehicleId": "sedan",
+   "config": {
+    "vehicleId": "sedan",
+    "reference": {
+     "cd": 0.28,
+     "cl": 0.12
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 52,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.29360873446964036,
+     "cl": 0.03356730699681933,
+     "clFront": 0.030707650344579347,
+     "clRear": 0.0028596566522399794,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.021149585144410423,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.392189870642614
+    },
+    "uncertainty": {
+     "cd": 0.01357310413270584,
+     "cl": 0.05260848415365642
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 746.8621885423855,
+     "lift": 85.38626213693553,
+     "downforce": -85.38626213693553,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13549651.21233819
+    },
+    "calibration": {
+     "cdRaw": 0.29193686364460936,
+     "clRaw": 0.042194660461924674,
+     "cdOffset": 0.0016718708250310077,
+     "clOffset": -0.008627353465105347
+    },
+    "rearFlow": {
+     "separationFraction": 0.057921100636820426,
+     "effectiveSlantDeg": 23.02748180562444,
+     "separationX": 4.7023048714600995,
+     "baseArea": 1.8833390801232386,
+     "basePressureCoefficient": -0.10153442699902743,
+     "wakeLength": 2.316694255143852,
+     "vortexDrag": 0.0000057585374595944795
+    },
+    "metrics": {
+     "length": 4.75,
+     "overallHeight": 1.44,
+     "frontalArea": 2.392189870642614,
+     "sideArea": 5.0612064812175195,
+     "sideAreaCentroidX": 2.5634210122577605,
+     "wettedArea": 16.59047110129014,
+     "groundClearance": 0.14,
+     "roofLength": 1.9678376506237263,
+     "trackWidth": 1.5915104867431735,
+     "effectiveSlantDeg": 23.02748180562444
+    },
+    "drag": {
+     "forebody": 0.0490534499796223,
+     "base": 0.07993669595040129,
+     "vortex": 0.0000057585374595944795,
+     "underbody": 0.036750000000000005,
+     "wheels": 0.06587687789082837,
+     "friction": 0.021149585144410423,
+     "cooling": 0.02025,
+     "mirrors": 0.011918786359688424,
+     "detail": 0.004,
+     "diffuser": 0.00299570978219896,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0016718708250310077
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.006315789473684219,
+     "slant": 0.017491992890709844,
+     "underbody": -0.06401729477010962,
+     "diffuser": -0.024964248184991336,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.008627353465105347
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 65.6998190366046,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.48621880703705
+     },
+     {
+      "target": 100,
+      "time": 8.418064361299647
+     },
+     {
+      "target": 160,
+      "time": 18.90648662295115
+     },
+     {
+      "target": 200,
+      "time": 33.38300379167512
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 30.11215286185916,
+    "power100": 13488.391760639184,
+    "power200": 81827.36054370596,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 746.8621885423855,
+     "rolling": 151.14921237863064,
+     "grade": 0,
+     "total": 898.0114009210162,
+     "powerRequired": 37417.14170504235
+    }
+   }
+  },
+  {
+   "name": "sedan near-critical slope",
+   "vehicleId": "sedan",
+   "config": {
+    "vehicleId": "sedan",
+    "reference": {
+     "cd": 0.28,
+     "cl": 0.12
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 36,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.3015685772020038,
+     "cl": 0.05463334133221649,
+     "clFront": 0.031760952061349206,
+     "clRear": 0.022872389270867287,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.021359445288247972,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.3921957883909166
+    },
+    "uncertainty": {
+     "cd": 0.016180564002491533,
+     "cl": 0.04436440032669921
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 767.1117997941508,
+     "lift": 138.97296988622156,
+     "downforce": -138.97296988622156,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13549651.21233819
+    },
+    "calibration": {
+     "cdRaw": 0.2998967063769728,
+     "clRaw": 0.06326069479732184,
+     "cdOffset": 0.0016718708250310077,
+     "clOffset": -0.008627353465105347
+    },
+    "rearFlow": {
+     "separationFraction": 0.2442221291001609,
+     "effectiveSlantDeg": 27.175826662205722,
+     "separationX": 4.583505551104614,
+     "baseArea": 1.8522494880533253,
+     "basePressureCoefficient": -0.10827107218826182,
+     "wakeLength": 2.489537281954583,
+     "vortexDrag": 0.0038595925283965507
+    },
+    "metrics": {
+     "length": 4.75,
+     "overallHeight": 1.44,
+     "frontalArea": 2.3921957883909166,
+     "sideArea": 5.15268595532613,
+     "sideAreaCentroidX": 2.5927234134887245,
+     "wettedArea": 16.755134154685646,
+     "groundClearance": 0.14,
+     "roofLength": 2.1095539477361664,
+     "trackWidth": 1.5915104867431735,
+     "effectiveSlantDeg": 27.175826662205722
+    },
+    "drag": {
+     "forebody": 0.0490534499796223,
+     "base": 0.08383303699676978,
+     "vortex": 0.0038595925283965507,
+     "underbody": 0.036750000000000005,
+     "wheels": 0.06587671492641542,
+     "friction": 0.021359445288247972,
+     "cooling": 0.02025,
+     "mirrors": 0.011918756875321764,
+     "detail": 0.004,
+     "diffuser": 0.00299570978219896,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0016718708250310077
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.006315789473684219,
+     "slant": 0.03855802722610702,
+     "underbody": -0.06401729477010962,
+     "diffuser": -0.024964248184991336,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.008627353465105347
+    },
+    "warnings": [
+     "CRITICAL_REAR_SLOPE"
+    ],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 65.22134374735583,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.4883033654746045
+     },
+     {
+      "target": 100,
+      "time": 8.424940222942844
+     },
+     {
+      "target": 160,
+      "time": 18.980520721532123
+     },
+     {
+      "target": 200,
+      "time": 33.83475238596019
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 30.100711513239276,
+    "power100": 13732.328167267235,
+    "power200": 83771.4483460825,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 767.1117997941508,
+     "rolling": 150.61334530113777,
+     "grade": 0,
+     "total": 917.7251450952886,
+     "powerRequired": 38238.54771230369
+    }
+   }
+  },
+  {
+   "name": "coupe aero package",
+   "vehicleId": "sports-coupe",
+   "config": {
+    "vehicleId": "sports-coupe",
+    "reference": {
+     "cd": 0.31,
+     "cl": -0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.55,
+     "frontOverhang": 0.95,
+     "rearOverhang": 0.95,
+     "width": 1.87,
+     "roofHeight": 1.175,
+     "beltHeight": 0.72,
+     "hoodLength": 1.35,
+     "hoodHeight": 0.74,
+     "frontBumperHeight": 0.48,
+     "rearBumperHeight": 0.86,
+     "windshieldAngle": 25,
+     "rearWindowAngle": 18,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.16,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.74,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.7,
+     "diffuserAngle": 7,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0.03,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.06,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0.02,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.55,
+     "frontOverhang": 0.95,
+     "rearOverhang": 0.95,
+     "width": 1.87,
+     "roofHeight": 1.175,
+     "beltHeight": 0.72,
+     "hoodLength": 1.35,
+     "hoodHeight": 0.74,
+     "frontBumperHeight": 0.48,
+     "rearBumperHeight": 0.86,
+     "windshieldAngle": 25,
+     "rearWindowAngle": 18,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.16,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.74,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 11,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0.09,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.06,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0.05,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.055
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.30606606229742794,
+     "cl": -0.25461591225686925,
+     "clFront": -0.12250363292306894,
+     "clRear": -0.13211227933380032,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02040601102960779,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.17635797048555
+    },
+    "uncertainty": {
+     "cd": 0.012399647642023316,
+     "cl": 0.09231835788901718
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 708.3067183405195,
+     "lift": -589.2393292291404,
+     "downforce": 589.2393292291404,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 12693883.76734841
+    },
+    "calibration": {
+     "cdRaw": 0.280906708403823,
+     "clRaw": -0.2642304292110744,
+     "cdOffset": 0.025159353893604963,
+     "clOffset": 0.00961451695420519
+    },
+    "rearFlow": {
+     "separationFraction": 0.0017895188641388377,
+     "effectiveSlantDeg": 14.189956589304233,
+     "separationX": 4.447982962050893,
+     "baseArea": 1.1043089993216402,
+     "basePressureCoefficient": -0.09686299106401769,
+     "wakeLength": 1.9145243394763614,
+     "vortexDrag": 0.006371150337722624
+    },
+    "metrics": {
+     "length": 4.45,
+     "overallHeight": 1.29,
+     "frontalArea": 2.17635797048555,
+     "sideArea": 4.025314261330062,
+     "sideAreaCentroidX": 2.4427347571747005,
+     "wettedArea": 14.374175595665367,
+     "groundClearance": 0.065,
+     "roofLength": 1.104334889098681,
+     "trackWidth": 1.6021146943413143,
+     "effectiveSlantDeg": 14.189956589304233
+    },
+    "drag": {
+     "forebody": 0.04221866754178068,
+     "base": 0.0491493927854809,
+     "vortex": 0.006371150337722624,
+     "underbody": 0.009656250000000002,
+     "wheels": 0.08393302718127504,
+     "friction": 0.02040601102960779,
+     "cooling": 0.02475,
+     "mirrors": 0.011823459352258635,
+     "detail": 0.004,
+     "diffuser": 0.015859768321185106,
+     "spoiler": 0.005723510959072262,
+     "wing": 0,
+     "splitter": 0.007015470895439889,
+     "yaw": 0,
+     "calibration": 0.025159353893604963
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01595505617977533,
+     "slant": 0.12492691704868956,
+     "underbody": -0.16996415207857077,
+     "diffuser": -0.13216473600987588,
+     "spoiler": -0.07719909180469166,
+     "wing": 0,
+     "splitter": -0.11387431018685037,
+     "yaw": 0,
+     "calibration": 0.00961451695420519
+    },
+    "warnings": [
+     "CLEARANCE_BELOW_LIMIT"
+    ],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 83.07418777789348,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.5045596763652607
+     },
+     {
+      "target": 100,
+      "time": 5.8325888747804004
+     },
+     {
+      "target": 160,
+      "time": 10.859713777665938
+     },
+     {
+      "target": 200,
+      "time": 16.2721948559765
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 33.99933413397548,
+    "power100": 13518.334204696168,
+    "power200": 79624.67485811742,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 708.3067183405195,
+     "rolling": 173.6850151215205,
+     "grade": 0,
+     "total": 881.99173346204,
+     "powerRequired": 36749.655560918334
+    }
+   }
+  },
+  {
+   "name": "suv tall and wide",
+   "vehicleId": "suv",
+   "config": {
+    "vehicleId": "suv",
+    "reference": {
+     "cd": 0.36,
+     "cl": 0.14
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 2.05,
+     "roofHeight": 1.6,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.9,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.35625540640596953,
+     "cl": 0.16907327755543788,
+     "clFront": 0.08308367424385064,
+     "clRear": 0.08598960331158724,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.018102543943901848,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 3.3364854666162933
+    },
+    "uncertainty": {
+     "cd": 0.014372687940871933,
+     "cl": 0.03333637453224153
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 1263.9402843854448,
+     "lift": 599.8464098307045,
+     "downforce": -599.8464098307045,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13407023.30483989
+    },
+    "calibration": {
+     "cdRaw": 0.3910993204114896,
+     "clRaw": 0.16596591052299492,
+     "cdOffset": -0.03484391400552006,
+     "clOffset": 0.0031073670324429647
+    },
+    "rearFlow": {
+     "separationFraction": 0.9999972392350497,
+     "effectiveSlantDeg": 62.000000000000014,
+     "separationX": 4.386292301395337,
+     "baseArea": 2.9144158383778294,
+     "basePressureCoefficient": -0.14279989487007066,
+     "wakeLength": 4.185154599713681,
+     "vortexDrag": 1.1227232247797057e-12
+    },
+    "metrics": {
+     "length": 4.699999999999999,
+     "overallHeight": 1.8,
+     "frontalArea": 3.3364854666162933,
+     "sideArea": 6.424460004324248,
+     "sideAreaCentroidX": 2.5990883899651713,
+     "wettedArea": 19.763821180756842,
+     "groundClearance": 0.2,
+     "roofLength": 2.377771106669123,
+     "trackWidth": 1.8421501371938545,
+     "effectiveSlantDeg": 62.000000000000014
+    },
+    "drag": {
+     "forebody": 0.06712681885101593,
+     "base": 0.12473552769588153,
+     "vortex": 1.1227232247797057e-12,
+     "underbody": 0.064125,
+     "wheels": 0.07533893044413448,
+     "friction": 0.018102543943901848,
+     "cooling": 0.02475,
+     "mirrors": 0.012305547382359306,
+     "detail": 0.004,
+     "diffuser": 0.000614952093073761,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.03484391400552006
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.06042553191489364,
+     "slant": 0.024309607532533323,
+     "underbody": -0.03364462814881737,
+     "diffuser": -0.005124600775614676,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0031073670324429647
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 57.246255514257655,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.814283025236879
+     },
+     {
+      "target": 100,
+      "time": 8.31929566602272
+     },
+     {
+      "target": 160,
+      "time": 21.826798589035164
+     },
+     {
+      "target": 200,
+      "time": 57.88413259550337
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 44.51858249895167,
+    "power100": 21283.023419729627,
+    "power200": 135213.86849159145,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 1263.9402843854448,
+     "rolling": 198.36067449186223,
+     "grade": 0,
+     "total": 1462.300958877307,
+     "powerRequired": 60929.2066198878
+    }
+   }
+  },
+  {
+   "name": "hatchback crosswind",
+   "vehicleId": "hatchback",
+   "config": {
+    "vehicleId": "hatchback",
+    "reference": {
+     "cd": 0.31,
+     "cl": 0.1
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.62,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.75,
+     "width": 1.79,
+     "roofHeight": 1.31,
+     "beltHeight": 0.78,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.86,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.82,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 50,
+     "rearDeckLength": 0,
+     "frontTaper": 0.12,
+     "rearTaper": 0.06,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.62,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.75,
+     "width": 1.79,
+     "roofHeight": 1.31,
+     "beltHeight": 0.78,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.86,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.82,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 50,
+     "rearDeckLength": 0,
+     "frontTaper": 0.12,
+     "rearTaper": 0.06,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 12,
+     "windAngle": 70,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.3563683187796153,
+     "cl": 0.216498293130642,
+     "clFront": 0.10107174627256747,
+     "clRear": 0.11542654685807453,
+     "cs": 0.4728702932681104,
+     "cmYaw": 0.12888380052425802,
+     "cdFriction": 0.019601934084908672,
+     "referenceSpeed": 47.13948721015939,
+     "frontalArea": 2.3443642591460154
+    },
+    "uncertainty": {
+     "cd": 0.027215852961457978,
+     "cl": 0.06552070722747312
+    },
+    "forces": {
+     "dynamicPressure": 1361.0310901226014,
+     "drag": 1137.0831551237316,
+     "lift": 690.7925010700319,
+     "downforce": -690.7925010700319,
+     "side": 1508.8121381690676,
+     "yawMoment": 1077.439177257333
+    },
+    "wind": {
+     "relativeSpeed": 47.13948721015939,
+     "yawAngleDeg": 13.840012151860483
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13715749.09950862
+    },
+    "calibration": {
+     "cdRaw": 0.3843183267939033,
+     "clRaw": 0.23364535903875489,
+     "cdOffset": -0.02795000801428804,
+     "clOffset": -0.017147065908112866
+    },
+    "rearFlow": {
+     "separationFraction": 0.9996646498695336,
+     "effectiveSlantDeg": 49.999999999999986,
+     "separationX": 3.864143610057014,
+     "baseArea": 1.9826943664953276,
+     "basePressureCoefficient": -0.1391875518031571,
+     "wakeLength": 3.355723079876131,
+     "vortexDrag": 1.5374216997995062e-8
+    },
+    "metrics": {
+     "length": 4.25,
+     "overallHeight": 1.4500000000000002,
+     "frontalArea": 2.3443642591460154,
+     "sideArea": 4.772876939101586,
+     "sideAreaCentroidX": 2.325902366503495,
+     "wettedArea": 15.105792604232514,
+     "groundClearance": 0.14,
+     "roofLength": 2.1865528304795223,
+     "trackWidth": 1.5767903114186852,
+     "effectiveSlantDeg": 49.999999999999986
+    },
+    "drag": {
+     "forebody": 0.054072052910669535,
+     "base": 0.11771480211309943,
+     "vortex": 1.5374216997995062e-8,
+     "underbody": 0.0435,
+     "wheels": 0.06419642443022598,
+     "friction": 0.019601934084908672,
+     "cooling": 0.02025,
+     "mirrors": 0.012161932553256937,
+     "detail": 0.004,
+     "diffuser": 0.0016839382202410845,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0.047137227107284706,
+     "calibration": -0.02795000801428804
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.028235294117647025,
+     "slant": 0.03470325414915925,
+     "underbody": -0.05175866385668437,
+     "diffuser": -0.014032818502009037,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0.11649829313064201,
+     "calibration": -0.017147065908112866
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 52.96358827596555,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.953443391739442
+     },
+     {
+      "target": 100,
+      "time": 9.809291536273376
+     },
+     {
+      "target": 160,
+      "time": 25.793203774895172
+     },
+     {
+      "target": 200,
+      "time": null
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 25.723879769182076,
+    "power100": 17966.299889997772,
+    "power200": 107396.1588791307,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 1072.365255951324,
+     "rolling": 120.97381153410099,
+     "grade": 0,
+     "total": 1193.339067485425,
+     "powerRequired": 49722.46114522604
+    }
+   }
+  },
+  {
+   "name": "ev hot humid uphill",
+   "vehicleId": "generic-ev",
+   "config": {
+    "vehicleId": "generic-ev",
+    "reference": {
+     "cd": 0.23,
+     "cl": 0.05
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.85,
+     "rearOverhang": 0.95,
+     "width": 1.85,
+     "roofHeight": 1.3,
+     "beltHeight": 0.82,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.96,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.18,
+     "rearTaper": 0.12,
+     "cabinWidthRatio": 0.77,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.03,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.69,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.018
+    },
+    "geometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.85,
+     "rearOverhang": 0.95,
+     "width": 1.85,
+     "roofHeight": 1.3,
+     "beltHeight": 0.82,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.96,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.18,
+     "rearTaper": 0.12,
+     "cabinWidthRatio": 0.77,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.03,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.69,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.018
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 308.15,
+     "pressure": 96000,
+     "humidity": 0.8,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 4
+    },
+    "speed": 30.555555555555557,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.23193227289424292,
+     "cl": 0.05,
+     "clFront": 0.03922176139555602,
+     "clRear": 0.010778238604443983,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02335357915831405,
+     "referenceSpeed": 30.555555555555557,
+     "frontalArea": 2.4041193022095775
+    },
+    "uncertainty": {
+     "cd": 0.009327461946868494,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 497.66413755998104,
+     "drag": 277.49396683054835,
+     "lift": 59.822197956271644,
+     "downforce": -59.822197956271644,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 30.555555555555557,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.0660706153350998,
+     "viscosity": 0.000018842276613563405,
+     "reynolds": 8125323.10883137
+    },
+    "calibration": {
+     "cdRaw": 0.22935565681319828,
+     "clRaw": 0.03952553280838241,
+     "cdOffset": 0.002576616081044647,
+     "clOffset": 0.010474467191617591
+    },
+    "rearFlow": {
+     "separationFraction": 0.004360819803600827,
+     "effectiveSlantDeg": 16.42318786241096,
+     "separationX": 4.695413647317662,
+     "baseArea": 1.3181301618310142,
+     "basePressureCoefficient": -0.09430931447007529,
+     "wakeLength": 2.2905715045592956,
+     "vortexDrag": 0.011571026866787567
+    },
+    "metrics": {
+     "length": 4.7,
+     "overallHeight": 1.44,
+     "frontalArea": 2.4041193022095775,
+     "sideArea": 5.135873240662743,
+     "sideAreaCentroidX": 2.5196884237135877,
+     "wettedArea": 16.62084839710703,
+     "groundClearance": 0.14,
+     "roofLength": 1.8166513480899695,
+     "trackWidth": 1.55524540377491,
+     "effectiveSlantDeg": 16.42318786241096
+    },
+    "drag": {
+     "forebody": 0.04390491403515209,
+     "base": 0.051707896455204926,
+     "vortex": 0.011571026866787567,
+     "underbody": 0.014250000000000002,
+     "wheels": 0.05215544616673341,
+     "friction": 0.02335357915831405,
+     "cooling": 0.0081,
+     "mirrors": 0.011859644391938122,
+     "detail": 0.004,
+     "diffuser": 0.009214594581305005,
+     "spoiler": -0.0007614448422368879,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.002576616081044647
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.003404255319148952,
+     "slant": 0.12401553041810595,
+     "underbody": -0.10487939781486044,
+     "diffuser": -0.07678828817754171,
+     "spoiler": -0.019418056298172427,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.010474467191617591
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 64.22811647339154,
+    "topSpeedLimit": "motor-rpm",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.74641125476968
+     },
+     {
+      "target": 100,
+      "time": 6.837092318584204
+     },
+     {
+      "target": 160,
+      "time": 16.206734296646893
+     },
+     {
+      "target": 200,
+      "time": 29.18360424151028
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 31.459803830496185,
+    "power100": 45547.51827437133,
+    "power200": 128648.43400092114,
+    "rangeAt100": 151490.14175559353,
+    "forcesAtSpeed": {
+     "speed": 30.555555555555557,
+     "drag": 277.49396683054835,
+     "rolling": 144.30629251986127,
+     "grade": 1265.5430479992287,
+     "total": 1687.3433073496385,
+     "powerRequired": 51557.71216901673
+    }
+   }
+  },
+  {
+   "name": "sedan direct density headwind",
+   "vehicleId": "sedan",
+   "config": {
+    "vehicleId": "sedan",
+    "reference": {
+     "cd": 0.28,
+     "cl": 0.12
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "direct",
+     "airDensity": 1.1,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 8,
+     "windAngle": 0,
+     "gradient": -3
+    },
+    "speed": 25,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.2811851041290996,
+     "cl": 0.12,
+     "clFront": 0.035029284994738376,
+     "clRear": 0.08497071500526163,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02239618369209071,
+     "referenceSpeed": 33,
+     "frontalArea": 2.392170079996828
+    },
+    "uncertainty": {
+     "cd": 0.011263002193187672,
+     "cl": 0.03
+    },
+    "forces": {
+     "dynamicPressure": 598.95,
+     "drag": 402.87928110036444,
+     "lift": 171.93483232969203,
+     "downforce": -171.93483232969203,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 33,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.1,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 9636462.793620238
+    },
+    "calibration": {
+     "cdRaw": 0.2795132333040686,
+     "clRaw": 0.12862735346510534,
+     "cdOffset": 0.0016718708250310077,
+     "clOffset": -0.008627353465105347
+    },
+    "rearFlow": {
+     "separationFraction": 0.0021753488424173933,
+     "effectiveSlantDeg": 14.679028695917134,
+     "separationX": 4.747093488413022,
+     "baseArea": 1.4010159810679337,
+     "basePressureCoefficient": -0.09951866061414182,
+     "wakeLength": 2.2659656210109453,
+     "vortexDrag": 0.007986748857322043
+    },
+    "metrics": {
+     "length": 4.75,
+     "overallHeight": 1.44,
+     "frontalArea": 2.392170079996828,
+     "sideArea": 4.961293627066826,
+     "sideAreaCentroidX": 2.537941686661011,
+     "wettedArea": 16.410627963818897,
+     "groundClearance": 0.14,
+     "roofLength": 1.4551747490346019,
+     "trackWidth": 1.5915104867431735,
+     "effectiveSlantDeg": 14.679028695917134
+    },
+    "drag": {
+     "forebody": 0.0490534499796223,
+     "base": 0.05828483313154452,
+     "vortex": 0.007986748857322043,
+     "underbody": 0.036750000000000005,
+     "wheels": 0.06587742289637238,
+     "friction": 0.02239618369209071,
+     "cooling": 0.02025,
+     "mirrors": 0.011918884964917633,
+     "detail": 0.004,
+     "diffuser": 0.00299570978219896,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0016718708250310077
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.006315789473684219,
+     "slant": 0.10392468589389052,
+     "underbody": -0.06401729477010962,
+     "diffuser": -0.024964248184991336,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.008627353465105347
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 74.10996590784384,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.159163192626121
+     },
+     {
+      "target": 100,
+      "time": 7.638189782122838
+     },
+     {
+      "target": 160,
+      "time": 16.101514576224943
+     },
+     {
+      "target": 200,
+      "time": 25.63913535223219
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 29.714991755711253,
+    "power100": -4799.86040276103,
+    "power200": 46090.457939572654,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 25,
+     "drag": 402.87928110036444,
+     "rolling": 150.07541174521768,
+     "grade": -795.5226281992909,
+     "total": -242.56793535370878,
+     "powerRequired": -6064.1983838427195
+    }
+   }
+  },
+  {
+   "name": "look-alike tesla model 3",
+   "vehicleId": "tesla-model-3",
+   "config": {
+    "vehicleId": "tesla-model-3",
+    "reference": {
+     "cd": 0.23,
+     "cl": 0.05
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.9,
+     "frontOverhang": 0.85,
+     "rearOverhang": 0.95,
+     "width": 1.85,
+     "roofHeight": 1.3,
+     "beltHeight": 0.82,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.96,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.2,
+     "frontTaper": 0.18,
+     "rearTaper": 0.12,
+     "cabinWidthRatio": 0.77,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.03,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.69,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.018
+    },
+    "geometry": {
+     "wheelbase": 2.88,
+     "frontOverhang": 0.87,
+     "rearOverhang": 0.98,
+     "width": 1.85,
+     "roofHeight": 1.305,
+     "beltHeight": 0.82,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.85,
+     "frontBumperHeight": 0.52,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 26,
+     "rearWindowAngle": 19,
+     "rearDeckLength": 0.35,
+     "frontTaper": 0.2,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.76,
+     "rideHeight": 0.138,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.95,
+     "diffuserAngle": 6,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0,
+     "spoilerAngle": 12,
+     "spoilerHeight": 0.02,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.15,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.25,
+     "grilleOpening": 0.016
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.21665759892485653,
+     "cl": 0.06273880691075293,
+     "clFront": 0.03766953550273756,
+     "clRear": 0.02506927140801537,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.020703943470747287,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.412332216622159
+    },
+    "uncertainty": {
+     "cd": 0.010936623834050061,
+     "cl": 0.03066870229366351
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 555.7595029002364,
+     "lift": 160.93452671081772,
+     "downforce": -160.93452671081772,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13492600.049338872
+    },
+    "calibration": {
+     "cdRaw": 0.21408098284381188,
+     "clRaw": 0.05226433971913534,
+     "cdOffset": 0.002576616081044647,
+     "clOffset": 0.010474467191617591
+    },
+    "rearFlow": {
+     "separationFraction": 0.00195882600795066,
+     "effectiveSlantDeg": 14.416376965710104,
+     "separationX": 4.727294871348302,
+     "baseArea": 1.2826456363561027,
+     "basePressureCoefficient": -0.09686895067547986,
+     "wakeLength": 2.177279947048738,
+     "vortexDrag": 0.00772074740956343
+    },
+    "metrics": {
+     "length": 4.73,
+     "overallHeight": 1.443,
+     "frontalArea": 2.412332216622159,
+     "sideArea": 4.961238175220869,
+     "sideAreaCentroidX": 2.5319191692518355,
+     "wettedArea": 16.363828324689123,
+     "groundClearance": 0.138,
+     "roofLength": 1.377626005753883,
+     "trackWidth": 1.5534447986955062,
+     "effectiveSlantDeg": 14.416376965710104
+    },
+    "drag": {
+     "forebody": 0.03762801540556564,
+     "base": 0.051505566284015564,
+     "vortex": 0.00772074740956343,
+     "underbody": 0.013882500000000002,
+     "wheels": 0.05088239911593481,
+     "friction": 0.020703943470747287,
+     "cooling": 0.007200000000000001,
+     "mirrors": 0.011819267596535113,
+     "detail": 0.004,
+     "diffuser": 0.009425685700496523,
+     "spoiler": -0.0006871421390464883,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.002576616081044647
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.00410147991543347,
+     "slant": 0.13436272952649808,
+     "underbody": -0.10632975843967514,
+     "diffuser": -0.07854738083747104,
+     "spoiler": -0.0131197706147831,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.010474467191617591
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 62.366431937930656,
+    "topSpeedLimit": "motor-rpm",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.024614513141818
+     },
+     {
+      "target": 100,
+      "time": 5.523442763516275
+     },
+     {
+      "target": 160,
+      "time": 12.10931352296484
+     },
+     {
+      "target": 200,
+      "time": 19.29854153677163
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 31.480065912899136,
+    "power100": 10747.104777830828,
+    "power200": 62162.16317687717,
+    "rangeAt100": 513626.703573848,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 555.7595029002364,
+     "rolling": 137.18242178631345,
+     "grade": 0,
+     "total": 692.9419246865498,
+     "powerRequired": 28872.580195272913
+    }
+   }
+  },
+  {
+   "name": "look-alike volkswagen golf",
+   "vehicleId": "volkswagen-golf-8",
+   "config": {
+    "vehicleId": "volkswagen-golf-8",
+    "reference": {
+     "cd": 0.31,
+     "cl": 0.1
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.62,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.75,
+     "width": 1.79,
+     "roofHeight": 1.31,
+     "beltHeight": 0.78,
+     "hoodLength": 0.95,
+     "hoodHeight": 0.86,
+     "frontBumperHeight": 0.58,
+     "rearBumperHeight": 0.82,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 50,
+     "rearDeckLength": 0,
+     "frontTaper": 0.12,
+     "rearTaper": 0.06,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.64,
+     "frontOverhang": 0.86,
+     "rearOverhang": 0.79,
+     "width": 1.79,
+     "roofHeight": 1.315,
+     "beltHeight": 0.81,
+     "hoodLength": 1.05,
+     "hoodHeight": 0.89,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.84,
+     "windshieldAngle": 30,
+     "rearWindowAngle": 48,
+     "rearDeckLength": 0,
+     "frontTaper": 0.14,
+     "rearTaper": 0.07,
+     "cabinWidthRatio": 0.8,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.3,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.2,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.63,
+     "tireWidth": 0.205,
+     "wheelExposure": 0.5,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.045
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.30117395324865387,
+     "cl": 0.09881216398475309,
+     "clFront": 0.04776355604789626,
+     "clRear": 0.05104860793685683,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.02006199875771549,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.359879405120824
+    },
+    "uncertainty": {
+     "cd": 0.012829808085038242,
+     "cl": 0.0300058784007364
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 755.758559326315,
+     "lift": 247.9568299034717,
+     "downforce": -247.9568299034717,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 12237474.46335386
+    },
+    "calibration": {
+     "cdRaw": 0.3291239612629419,
+     "clRaw": 0.11595922989286596,
+     "cdOffset": -0.02795000801428804,
+     "clOffset": -0.017147065908112866
+    },
+    "rearFlow": {
+     "separationFraction": 0.9992539711661633,
+     "effectiveSlantDeg": 48.00000000000001,
+     "separationX": 3.889619118971183,
+     "baseArea": 1.9664447561293885,
+     "basePressureCoefficient": -0.13737266550352822,
+     "wakeLength": 3.3626352218797115,
+     "vortexDrag": 7.234355218855358e-8
+    },
+    "metrics": {
+     "length": 4.29,
+     "overallHeight": 1.455,
+     "frontalArea": 2.359879405120824,
+     "sideArea": 4.807243856912498,
+     "sideAreaCentroidX": 2.355430589309557,
+     "wettedArea": 15.211707437785725,
+     "groundClearance": 0.14,
+     "roofLength": 2.155160131297755,
+     "trackWidth": 1.574780590660311,
+     "effectiveSlantDeg": 48.00000000000001
+    },
+    "drag": {
+     "forebody": 0.04933491159334384,
+     "base": 0.11447015348697402,
+     "vortex": 7.234355218855358e-8,
+     "underbody": 0.0435,
+     "wheels": 0.06377436180535863,
+     "friction": 0.02006199875771549,
+     "cooling": 0.02025,
+     "mirrors": 0.012081973315301768,
+     "detail": 0.004,
+     "diffuser": 0.0016504899606960485,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.02795000801428804
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.0265268065268065,
+     "slant": 0.03494517022854424,
+     "underbody": -0.05175866385668437,
+     "diffuser": -0.013754083005800406,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.017147065908112866
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 59.456135508566376,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.8596196925139585
+     },
+     {
+      "target": 100,
+      "time": 9.290927781590813
+     },
+     {
+      "target": 160,
+      "time": 21.610339813038177
+     },
+     {
+      "target": 200,
+      "time": 45.01682221136308
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 25.973240140785947,
+    "power100": 12798.189340598412,
+    "power200": 81011.81506285768,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 755.758559326315,
+     "rolling": 121.57455420096528,
+     "grade": 0,
+     "total": 877.3331135272803,
+     "powerRequired": 36555.546396970014
+    }
+   }
+  },
+  {
+   "name": "look-alike porsche 911",
+   "vehicleId": "porsche-911-carrera-992",
+   "config": {
+    "vehicleId": "porsche-911-carrera-992",
+    "reference": {
+     "cd": 0.31,
+     "cl": -0.08
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.55,
+     "frontOverhang": 0.95,
+     "rearOverhang": 0.95,
+     "width": 1.87,
+     "roofHeight": 1.175,
+     "beltHeight": 0.72,
+     "hoodLength": 1.35,
+     "hoodHeight": 0.74,
+     "frontBumperHeight": 0.48,
+     "rearBumperHeight": 0.86,
+     "windshieldAngle": 25,
+     "rearWindowAngle": 18,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.16,
+     "rearTaper": 0.1,
+     "cabinWidthRatio": 0.74,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.7,
+     "diffuserAngle": 7,
+     "diffuserLength": 0.7,
+     "splitterExtension": 0.03,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.06,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0.02,
+     "wheelDiameter": 0.67,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.45,
+     "frontOverhang": 1.02,
+     "rearOverhang": 1.05,
+     "width": 1.85,
+     "roofHeight": 1.185,
+     "beltHeight": 0.765,
+     "hoodLength": 1.4,
+     "hoodHeight": 0.785,
+     "frontBumperHeight": 0.485,
+     "rearBumperHeight": 0.765,
+     "windshieldAngle": 29,
+     "rearWindowAngle": 20,
+     "rearDeckLength": 0.25,
+     "frontTaper": 0.2,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.7,
+     "rideHeight": 0.115,
+     "minGroundClearance": 0.07,
+     "floorFlatness": 0.7,
+     "diffuserAngle": 3,
+     "diffuserLength": 0.4,
+     "splitterExtension": 0,
+     "spoilerAngle": 25,
+     "spoilerHeight": 0.02,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.695,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.55,
+     "mirrorWidth": 0.19,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.05
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.3044037996868298,
+     "cl": 0.130418834102818,
+     "clFront": 0.02987149972395807,
+     "clRear": 0.10054733437885992,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.020732311545965835,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.1671346506249423
+    },
+    "uncertainty": {
+     "cd": 0.012493519988711305,
+     "cl": 0.10940302297604629
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 701.474389982616,
+     "lift": 300.5398493338071,
+     "downforce": -300.5398493338071,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 12893562.837846028
+    },
+    "calibration": {
+     "cdRaw": 0.2792444457932248,
+     "clRaw": 0.1208043171486128,
+     "cdOffset": 0.025159353893604963,
+     "clOffset": 0.00961451695420519
+    },
+    "rearFlow": {
+     "separationFraction": 0.004393876561748335,
+     "effectiveSlantDeg": 16.442150400342104,
+     "separationX": 4.514193420971027,
+     "baseArea": 1.1566430116185136,
+     "basePressureCoefficient": -0.09959888257647283,
+     "wakeLength": 1.925990889501075,
+     "vortexDrag": 0.01628664680621013
+    },
+    "metrics": {
+     "length": 4.5200000000000005,
+     "overallHeight": 1.3,
+     "frontalArea": 2.1671346506249423,
+     "sideArea": 4.13223619765967,
+     "sideAreaCentroidX": 2.445785184275592,
+     "wettedArea": 14.587598646741094,
+     "groundClearance": 0.115,
+     "roofLength": 1.1309861369622713,
+     "trackWidth": 1.585066330126694,
+     "effectiveSlantDeg": 16.442150400342104
+    },
+    "drag": {
+     "forebody": 0.04158586308759822,
+     "base": 0.053157911283394234,
+     "vortex": 0.01628664680621013,
+     "underbody": 0.0198125,
+     "wheels": 0.0864498537551881,
+     "friction": 0.020732311545965835,
+     "cooling": 0.022500000000000003,
+     "mirrors": 0.011873779966823737,
+     "detail": 0.004,
+     "diffuser": 0.0029168609773768837,
+     "spoiler": -0.00007128162933235736,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.025159353893604963
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.01783185840707968,
+     "slant": 0.17407182638538007,
+     "underbody": -0.10153702591706826,
+     "diffuser": -0.02430717481147403,
+     "spoiler": -0.029591450101145323,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.00961451695420519
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 83.01802149503305,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 2.8485467882274644
+     },
+     {
+      "target": 100,
+      "time": 5.189217422559155
+     },
+     {
+      "target": 160,
+      "time": 10.186613822471196
+     },
+     {
+      "target": 200,
+      "time": 15.588965078162904
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 39.766665480781285,
+    "power100": 13178.884275297116,
+    "power200": 77710.47328647262,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 701.474389982616,
+     "rolling": 159.0431524073281,
+     "grade": 0,
+     "total": 860.5175423899441,
+     "powerRequired": 35854.89759958101
+    }
+   }
+  },
+  {
+   "name": "look-alike mercedes g 500",
+   "vehicleId": "mercedes-benz-g-500",
+   "config": {
+    "vehicleId": "mercedes-benz-g-500",
+    "reference": {
+     "cd": 0.36,
+     "cl": 0.14
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.89,
+     "frontOverhang": 0.88,
+     "rearOverhang": 0.84,
+     "width": 1.93,
+     "roofHeight": 1.73,
+     "beltHeight": 1.01,
+     "hoodLength": 1.45,
+     "hoodHeight": 1.09,
+     "frontBumperHeight": 0.86,
+     "rearBumperHeight": 1.01,
+     "windshieldAngle": 68,
+     "rearWindowAngle": 85,
+     "rearDeckLength": 0,
+     "frontTaper": 0.04,
+     "rearTaper": 0,
+     "cabinWidthRatio": 0.92,
+     "rideHeight": 0.241,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.1,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.775,
+     "tireWidth": 0.265,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.26,
+     "rimOpenness": 0.75,
+     "grilleOpening": 0.07
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 33.333333333333336,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.46988660035025615,
+     "cl": 0.19894593736174337,
+     "clFront": 0.10572535041031986,
+     "clRear": 0.09322058695142352,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.018338090878606036,
+     "referenceSpeed": 33.333333333333336,
+     "frontalArea": 3.4937328349735015
+    },
+    "uncertainty": {
+     "cd": 0.05806923197043494,
+     "cl": 0.042055390651658954
+    },
+    "forces": {
+     "dynamicPressure": 680.5434034481397,
+     "drag": 1117.2196889139284,
+     "lift": 473.0211886959497,
+     "downforce": -473.0211886959497,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 33.333333333333336,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 10520234.457074368
+    },
+    "calibration": {
+     "cdRaw": 0.5047305143557762,
+     "clRaw": 0.1958385703293004,
+     "cdOffset": -0.03484391400552006,
+     "clOffset": 0.0031073670324429647
+    },
+    "rearFlow": {
+     "separationFraction": 0.9999999997210531,
+     "effectiveSlantDeg": 85.00000000000001,
+     "separationX": 4.549632822183952,
+     "baseArea": 3.4604028866352134,
+     "basePressureCoefficient": -0.14999999998884211,
+     "wakeLength": 4.98904635298659,
+     "vortexDrag": 0
+    },
+    "metrics": {
+     "length": 4.61,
+     "overallHeight": 1.971,
+     "frontalArea": 3.4937328349735015,
+     "sideArea": 6.93246811549665,
+     "sideAreaCentroidX": 2.571087811248076,
+     "wettedArea": 19.972134909887522,
+     "groundClearance": 0.241,
+     "roofLength": 2.8531768244076674,
+     "trackWidth": 1.6791808371782515,
+     "effectiveSlantDeg": 85.00000000000001
+    },
+    "drag": {
+     "forebody": 0.1252188607594204,
+     "base": 0.14856901127661873,
+     "vortex": 0,
+     "underbody": 0.0860825,
+     "wheels": 0.07681327886273576,
+     "friction": 0.018338090878606036,
+     "cooling": 0.03150000000000001,
+     "mirrors": 0.013791918923407167,
+     "detail": 0.004,
+     "diffuser": 0.0004168536549880368,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.03484391400552006
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.09527114967462036,
+     "slant": 0.004802097600057421,
+     "underbody": -0.020760896487143736,
+     "diffuser": -0.0034737804582336404,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0031073670324429647
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 62.95638365208674,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 2.9795995562667192
+     },
+     {
+      "target": 100,
+      "time": 6.15299884373928
+     },
+     {
+      "target": 160,
+      "time": 14.6988678859146
+     },
+     {
+      "target": 200,
+      "time": 28.01207809465055
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 44.50677928020241,
+    "power100": 28535.875378690285,
+    "power200": 185061.4101120806,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 33.333333333333336,
+     "drag": 1117.2196889139284,
+     "rolling": 248.73016202434448,
+     "grade": 0,
+     "total": 1365.949850938273,
+     "powerRequired": 45531.661697942436
+    }
+   }
+  },
+  {
+   "name": "sedan without mirrors, closed rims, sealed grille",
+   "vehicleId": "sedan",
+   "config": {
+    "vehicleId": "sedan",
+    "reference": {
+     "cd": 0.28,
+     "cl": 0.12
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0.2,
+     "rimOpenness": 0.6,
+     "grilleOpening": 0.045
+    },
+    "geometry": {
+     "wheelbase": 2.84,
+     "frontOverhang": 0.88,
+     "rearOverhang": 1.03,
+     "width": 1.84,
+     "roofHeight": 1.3,
+     "beltHeight": 0.8,
+     "hoodLength": 1.15,
+     "hoodHeight": 0.84,
+     "frontBumperHeight": 0.56,
+     "rearBumperHeight": 0.92,
+     "windshieldAngle": 28,
+     "rearWindowAngle": 24,
+     "rearDeckLength": 0.55,
+     "frontTaper": 0.14,
+     "rearTaper": 0.08,
+     "cabinWidthRatio": 0.78,
+     "rideHeight": 0.14,
+     "minGroundClearance": 0.08,
+     "floorFlatness": 0.45,
+     "diffuserAngle": 4,
+     "diffuserLength": 0.5,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.25,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.66,
+     "tireWidth": 0.225,
+     "wheelExposure": 0.45,
+     "mirrorWidth": 0,
+     "rimOpenness": 0,
+     "grilleOpening": 0
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.24398011516252496,
+     "cl": 0.12217232952391338,
+     "clFront": 0.03513790147093405,
+     "clRear": 0.08703442805297934,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.021357793048863552,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.3431905524339123
+    },
+    "uncertainty": {
+     "cd": 0.020484142659086123,
+     "cl": 0.030019656125447478
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 607.9080498671408,
+     "lift": 304.408179081045,
+     "downforce": -304.408179081045,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13549651.21233819
+    },
+    "calibration": {
+     "cdRaw": 0.24230824433749396,
+     "clRaw": 0.13079968298901873,
+     "cdOffset": 0.0016718708250310077,
+     "clOffset": -0.008627353465105347
+    },
+    "rearFlow": {
+     "separationFraction": 0.0021753488424173933,
+     "effectiveSlantDeg": 14.679028695917134,
+     "separationX": 4.747093488413022,
+     "baseArea": 1.4010159810679337,
+     "basePressureCoefficient": -0.09951866061414182,
+     "wakeLength": 2.2659656210109453,
+     "vortexDrag": 0.008153695239633529
+    },
+    "metrics": {
+     "length": 4.75,
+     "overallHeight": 1.44,
+     "frontalArea": 2.3431905524339123,
+     "sideArea": 4.961293627066826,
+     "sideAreaCentroidX": 2.537941686661011,
+     "wettedArea": 16.410627963818897,
+     "groundClearance": 0.14,
+     "roofLength": 1.4551747490346019,
+     "trackWidth": 1.5915104867431735,
+     "effectiveSlantDeg": 14.679028695917134
+    },
+    "drag": {
+     "forebody": 0.0490534499796223,
+     "base": 0.0595031564078573,
+     "vortex": 0.008153695239633529,
+     "underbody": 0.036750000000000005,
+     "wheels": 0.06049443987931834,
+     "friction": 0.021357793048863552,
+     "cooling": 0,
+     "mirrors": 0,
+     "detail": 0.004,
+     "diffuser": 0.00299570978219896,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0016718708250310077
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": -0.006315789473684219,
+     "slant": 0.10609701541780393,
+     "underbody": -0.06401729477010962,
+     "diffuser": -0.024964248184991336,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.008627353465105347
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 70.9059466125002,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 4.48622127151814
+     },
+     {
+      "target": 100,
+      "time": 8.384445515642927
+     },
+     {
+      "target": 160,
+      "time": 18.42081450171842
+     },
+     {
+      "target": 200,
+      "time": 30.71344065682484
+     }
+    ],
+    "tractionLimited": true,
+    "maxGradeDeg": 30.101132530915038,
+    "power100": 11745.260640147899,
+    "power200": 67890.39754541994,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 607.9080498671406,
+     "rolling": 148.95899320918954,
+     "grade": 0,
+     "total": 756.8670430763301,
+     "powerRequired": 31536.126794847092
+    }
+   }
+  },
+  {
+   "name": "suv wide mirrors, open rims, large grille",
+   "vehicleId": "suv",
+   "config": {
+    "vehicleId": "suv",
+    "reference": {
+     "cd": 0.36,
+     "cl": 0.14
+    },
+    "referenceGeometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.24,
+     "rimOpenness": 0.7,
+     "grilleOpening": 0.055
+    },
+    "geometry": {
+     "wheelbase": 2.78,
+     "frontOverhang": 0.92,
+     "rearOverhang": 1,
+     "width": 1.92,
+     "roofHeight": 1.48,
+     "beltHeight": 0.92,
+     "hoodLength": 1.1,
+     "hoodHeight": 0.98,
+     "frontBumperHeight": 0.74,
+     "rearBumperHeight": 0.98,
+     "windshieldAngle": 33,
+     "rearWindowAngle": 62,
+     "rearDeckLength": 0,
+     "frontTaper": 0.08,
+     "rearTaper": 0.04,
+     "cabinWidthRatio": 0.84,
+     "rideHeight": 0.2,
+     "minGroundClearance": 0.12,
+     "floorFlatness": 0.25,
+     "diffuserAngle": 2,
+     "diffuserLength": 0.3,
+     "splitterExtension": 0,
+     "spoilerAngle": 20,
+     "spoilerHeight": 0,
+     "spoilerWidth": 1.3,
+     "wingChord": 0,
+     "wingAngle": 6,
+     "sideSkirtDepth": 0,
+     "wheelDiameter": 0.74,
+     "tireWidth": 0.235,
+     "wheelExposure": 0.65,
+     "mirrorWidth": 0.28,
+     "rimOpenness": 1,
+     "grilleOpening": 0.1
+    },
+    "environment": {
+     "airDensityMode": "computed",
+     "airDensity": 1.225,
+     "temperature": 288.15,
+     "pressure": 101325,
+     "humidity": 0,
+     "windSpeed": 0,
+     "windAngle": 0,
+     "gradient": 0
+    },
+    "speed": 41.66666666666667,
+    "mode": "analytical",
+    "fidelity": "coarse"
+   },
+   "aero": {
+    "coefficients": {
+     "cd": 0.38612295848747286,
+     "cl": 0.13982358929608552,
+     "clFront": 0.07013182812875536,
+     "clRear": 0.06969176116733015,
+     "cs": 0,
+     "cmYaw": 0,
+     "cdFriction": 0.019436808154267012,
+     "referenceSpeed": 41.66666666666667,
+     "frontalArea": 2.9387684368204106
+    },
+    "uncertainty": {
+     "cd": 0.02022740078577442,
+     "cl": 0.030000129669454992
+    },
+    "forces": {
+     "dynamicPressure": 1063.3490678877183,
+     "drag": 1206.6097952072798,
+     "lift": 436.9398626452567,
+     "downforce": -436.9398626452567,
+     "side": 0,
+     "yawMoment": 0
+    },
+    "wind": {
+     "relativeSpeed": 41.66666666666667,
+     "yawAngleDeg": 0
+    },
+    "air": {
+     "density": 1.2249781262066513,
+     "viscosity": 0.000017892976260350732,
+     "reynolds": 13407023.30483989
+    },
+    "calibration": {
+     "cdRaw": 0.4209668724929929,
+     "clRaw": 0.13671622226364255,
+     "cdOffset": -0.03484391400552006,
+     "clOffset": 0.0031073670324429647
+    },
+    "rearFlow": {
+     "separationFraction": 0.9999972392350497,
+     "effectiveSlantDeg": 61.99999999999997,
+     "separationX": 4.450097257043742,
+     "baseArea": 2.526109944238347,
+     "basePressureCoefficient": -0.14279989487007066,
+     "wakeLength": 3.8731554610723453,
+     "vortexDrag": 9.510203086963231e-13
+    },
+    "metrics": {
+     "length": 4.699999999999999,
+     "overallHeight": 1.68,
+     "frontalArea": 2.9387684368204106,
+     "sideArea": 6.129225276432437,
+     "sideAreaCentroidX": 2.5712705620456298,
+     "wettedArea": 18.69099334374941,
+     "groundClearance": 0.2,
+     "roofLength": 2.62636003412625,
+     "trackWidth": 1.6930918358108296,
+     "effectiveSlantDeg": 61.99999999999997
+    },
+    "drag": {
+     "forebody": 0.06705335122146114,
+     "base": 0.1227480974505649,
+     "vortex": 9.510203086963231e-13,
+     "underbody": 0.064125,
+     "wheels": 0.0789726978028566,
+     "friction": 0.019436808154267012,
+     "cooling": 0.045000000000000005,
+     "mirrors": 0.01901596576981852,
+     "detail": 0.004,
+     "diffuser": 0.000614952093073761,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": -0.03484391400552006
+    },
+    "lift": {
+     "bodyBase": 0.12,
+     "camber": 0.034893617021276635,
+     "slant": 0.02059183416679797,
+     "underbody": -0.03364462814881737,
+     "diffuser": -0.005124600775614676,
+     "spoiler": 0,
+     "wing": 0,
+     "splitter": 0,
+     "yaw": 0,
+     "calibration": 0.0031073670324429647
+    },
+    "warnings": [],
+    "solver": null
+   },
+   "performance": {
+    "topSpeed": 58.018469079850775,
+    "topSpeedLimit": "power",
+    "accelTimes": [
+     {
+      "target": 60,
+      "time": 3.8129406173720146
+     },
+     {
+      "target": 100,
+      "time": 8.304025792890108
+     },
+     {
+      "target": 160,
+      "time": 21.55724345418977
+     },
+     {
+      "target": 200,
+      "time": 52.10054911052615
+     }
+    ],
+    "tractionLimited": false,
+    "maxGradeDeg": 44.53780218565271,
+    "power100": 20593.726994288107,
+    "power200": 129747.83492422425,
+    "rangeAt100": null,
+    "forcesAtSpeed": {
+     "speed": 41.66666666666667,
+     "drag": 1206.6097952072798,
+     "rolling": 200.15264651090214,
+     "grade": 0,
+     "total": 1406.762441718182,
+     "powerRequired": 58615.10173825759
+    }
+   }
+  }
+ ]
+}

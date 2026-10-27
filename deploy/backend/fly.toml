@@ -1,0 +1,43 @@
+# AeroLab backend on Fly.io (FastAPI + OpenFOAM). Deploy from the repository root:
+#
+#     fly deploy . --config deploy/backend/fly.toml --ha=false
+#
+# The backend has no public address: only the frontend app reaches it, over Fly's private network at
+# http://<this app>.internal:8000. Exactly one machine: jobs live in memory and SQLite is a local file.
+
+app = "aerolab-api"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  # The frontend's public address: the only origin whose changes are accepted.
+  AEROLAB_ALLOWED_ORIGINS = "https://aerolab-web.fly.dev"
+  AEROLAB_COOKIE_SECURE = "1"
+  # Set by Fly's edge on the visitor's request and passed on by the frontend; used by the sign-in limits.
+  AEROLAB_CLIENT_IP_HEADER = "fly-client-ip"
+  # One MPI process per virtual CPU of the machine below.
+  AEROLAB_CFD_PROCS = "4"
+  AEROLAB_CFD_RUNS_PER_WINDOW = "2"
+  AEROLAB_CFD_WINDOW_MINUTES = "10"
+  AEROLAB_CFD_QUEUE_LIMIT = "4"
+  AEROLAB_RUN_RETENTION_DAYS = "10"
+
+# Database, CFD cases, uploaded surfaces, datasets and trained surrogates.
+[mounts]
+  source = "aerolab_data"
+  destination = "/app/backend/data"
+  initial_size = "150gb"
+
+[[vm]]
+  size = "performance-4x"
+  memory = "8gb"
+
+[checks.health]
+  type = "http"
+  port = 8000
+  path = "/api/health"
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "60s"

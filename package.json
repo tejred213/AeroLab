@@ -1,0 +1,37 @@
+{
+  "name": "aerolab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AeroLab — virtual wind tunnel and vehicle performance simulator (educational / research-oriented).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "golden": "vitest run --config vitest.golden.config.mts",
+    "backend": "cd backend && AEROLAB_COOKIE_SECURE=0 uv run uvicorn main:app --reload --port 8000",
+    "backend:test": "cd backend && uv run pytest -q"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "recharts": "^3.10.1",
+    "three": "^0.186.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

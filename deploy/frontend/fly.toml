@@ -1,0 +1,29 @@
+# AeroLab frontend on Fly.io (Next.js). Deploy from the repository root, after the backend:
+#
+#     fly deploy . --config deploy/frontend/fly.toml --depot=false
+#
+# --depot=false: on Fly's Depot builders the Next.js build's CSS workers are killed for lack of memory
+# (seen 2026-10-28); Fly's own builder builds it.
+#
+# Public at https://<this app>.fly.dev; /api/* goes to the backend over Fly's private network.
+
+app = "aerolab-web"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+  [build.args]
+    # <backend app>.internal: the backend's private address. Change it with the backend's app name.
+    AEROLAB_BACKEND_INTERNAL_URL = "http://aerolab-api.internal:8000"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  # Kept running so that a visitor never waits for a cold start.
+  min_machines_running = 1
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "1gb"

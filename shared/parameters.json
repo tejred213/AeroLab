@@ -1,0 +1,370 @@
+{
+  "$comment": "Single source of truth for geometry parameter definitions. Read by lib/geometry/parameters.ts and backend/geometry/parameters.py. Lengths are metres, angles are degrees, ratios are dimensionless. Body heights are measured from the body floor plane, so ride height moves the whole body relative to the ground. A parameter with a \"default\" was added after the first release: geometries stored before it existed are completed with that value.",
+  "groups": [
+    {
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "id": "underbody",
+      "label": "Underbody"
+    },
+    {
+      "id": "aero",
+      "label": "Aero devices"
+    },
+    {
+      "id": "wheels",
+      "label": "Wheels"
+    },
+    {
+      "id": "details",
+      "label": "Details"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "wheelbase",
+      "label": "Wheelbase",
+      "group": "body",
+      "kind": "length",
+      "min": 2.2,
+      "max": 3.4,
+      "step": 0.01,
+      "tooltip": "Distance between axle centres. Sets body length together with the overhangs; a longer body has more wetted area but a gentler rear pressure recovery."
+    },
+    {
+      "id": "frontOverhang",
+      "label": "Front overhang",
+      "group": "body",
+      "kind": "length",
+      "min": 0.6,
+      "max": 1.3,
+      "step": 0.01,
+      "tooltip": "Nose to front axle. Longer overhangs allow a more gradual front-end shape and move the front wheels further behind the stagnation region."
+    },
+    {
+      "id": "rearOverhang",
+      "label": "Rear overhang",
+      "group": "body",
+      "kind": "length",
+      "min": 0.5,
+      "max": 1.4,
+      "step": 0.01,
+      "tooltip": "Rear axle to tail. Gives room for rear taper, deck and diffuser, which control the size of the wake."
+    },
+    {
+      "id": "width",
+      "label": "Width",
+      "group": "body",
+      "kind": "length",
+      "min": 1.5,
+      "max": 2.2,
+      "step": 0.01,
+      "tooltip": "Overall body width. Drag force scales with frontal area, which grows almost linearly with width."
+    },
+    {
+      "id": "roofHeight",
+      "label": "Roof height",
+      "group": "body",
+      "kind": "length",
+      "min": 0.95,
+      "max": 1.75,
+      "step": 0.005,
+      "tooltip": "Roof crown above the body floor. Overall height = ride height + roof height. Raises frontal area and the size of the rear separation region."
+    },
+    {
+      "id": "beltHeight",
+      "label": "Body (beltline) height",
+      "group": "body",
+      "kind": "length",
+      "min": 0.55,
+      "max": 1.15,
+      "step": 0.005,
+      "tooltip": "Height of the shoulder line above the floor, where the greenhouse starts to narrow. A higher belt makes the full-width lower body taller."
+    },
+    {
+      "id": "hoodLength",
+      "label": "Hood length",
+      "group": "body",
+      "kind": "length",
+      "min": 0.5,
+      "max": 1.9,
+      "step": 0.01,
+      "tooltip": "Nose to windshield base. Positions the cabin along the body and therefore the length left for the roof and the rear slope."
+    },
+    {
+      "id": "hoodHeight",
+      "label": "Hood (cowl) height",
+      "group": "body",
+      "kind": "length",
+      "min": 0.55,
+      "max": 1.25,
+      "step": 0.005,
+      "tooltip": "Height of the hood at the windshield base, above the floor. Together with nose height it sets the hood slope and how hard the flow is turned upward."
+    },
+    {
+      "id": "frontBumperHeight",
+      "label": "Front bumper (nose) height",
+      "group": "body",
+      "kind": "length",
+      "min": 0.35,
+      "max": 1.0,
+      "step": 0.005,
+      "tooltip": "Height of the nose's upper edge above the floor. A tall, blunt nose increases the stagnation area and forebody drag."
+    },
+    {
+      "id": "rearBumperHeight",
+      "label": "Rear bumper (tail) height",
+      "group": "body",
+      "kind": "length",
+      "min": 0.5,
+      "max": 1.3,
+      "step": 0.005,
+      "tooltip": "Height of the tail's upper edge (deck trailing edge) above the floor. A higher tail reduces the effective rear slope but enlarges the base."
+    },
+    {
+      "id": "windshieldAngle",
+      "label": "Windshield angle",
+      "group": "body",
+      "kind": "angle",
+      "min": 18,
+      "max": 70,
+      "step": 0.5,
+      "tooltip": "Windshield inclination from horizontal. Steeper (more upright) screens turn the flow harder and raise forebody drag."
+    },
+    {
+      "id": "rearWindowAngle",
+      "label": "Rear window angle",
+      "group": "body",
+      "kind": "angle",
+      "min": 10,
+      "max": 85,
+      "step": 0.5,
+      "tooltip": "Rear window (backlight) inclination from horizontal. Near 30 deg strong trailing vortices form and drag peaks; steeper slopes separate fully like a squareback."
+    },
+    {
+      "id": "rearDeckLength",
+      "label": "Rear deck length",
+      "group": "body",
+      "kind": "length",
+      "min": 0,
+      "max": 1.2,
+      "step": 0.01,
+      "tooltip": "Length of the trunk lid behind the rear window. A deck lowers the effective rear slope and lets separated flow re-attach."
+    },
+    {
+      "id": "frontTaper",
+      "label": "Front plan taper",
+      "group": "body",
+      "kind": "ratio",
+      "min": 0,
+      "max": 0.35,
+      "step": 0.005,
+      "tooltip": "Fractional narrowing of the body toward the nose in plan view. Taper eases the flow around the front corners."
+    },
+    {
+      "id": "rearTaper",
+      "label": "Rear plan taper (boat-tail)",
+      "group": "body",
+      "kind": "ratio",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.005,
+      "tooltip": "Fractional narrowing of the body toward the tail in plan view. Boat-tailing shrinks the base area and raises base pressure."
+    },
+    {
+      "id": "cabinWidthRatio",
+      "label": "Cabin width ratio",
+      "group": "body",
+      "kind": "ratio",
+      "min": 0.6,
+      "max": 0.95,
+      "step": 0.005,
+      "tooltip": "Roof width as a fraction of body width (tumblehome). A narrower greenhouse reduces frontal area and the width of the upper wake."
+    },
+    {
+      "id": "rideHeight",
+      "label": "Ride height",
+      "group": "underbody",
+      "kind": "length",
+      "min": 0.05,
+      "max": 0.32,
+      "step": 0.001,
+      "tooltip": "Height of the body floor above the ground. Lower ride height restricts underbody flow, which changes underbody suction and exposes less tyre."
+    },
+    {
+      "id": "minGroundClearance",
+      "label": "Ground clearance limit",
+      "group": "underbody",
+      "kind": "length",
+      "min": 0.03,
+      "max": 0.2,
+      "step": 0.001,
+      "tooltip": "Configured minimum allowed clearance. The actual lowest point (floor, skirts, splitter) is computed from the geometry and a warning is raised if it falls below this limit."
+    },
+    {
+      "id": "floorFlatness",
+      "label": "Floor flatness",
+      "group": "underbody",
+      "kind": "ratio",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "tooltip": "0 = exposed, rough underbody; 1 = fully panelled flat floor. Smooth floors reduce underbody drag and let the floor and diffuser generate suction."
+    },
+    {
+      "id": "diffuserAngle",
+      "label": "Diffuser angle",
+      "group": "underbody",
+      "kind": "angle",
+      "min": 0,
+      "max": 20,
+      "step": 0.25,
+      "tooltip": "Upsweep angle of the rear floor. Moderate angles recover pressure and add downforce; beyond roughly 10-14 deg the diffuser flow tends to separate."
+    },
+    {
+      "id": "diffuserLength",
+      "label": "Diffuser length",
+      "group": "underbody",
+      "kind": "length",
+      "min": 0,
+      "max": 1.6,
+      "step": 0.01,
+      "tooltip": "Length of the upswept floor section ahead of the tail. Sets the diffuser area ratio together with angle and ride height."
+    },
+    {
+      "id": "splitterExtension",
+      "label": "Front splitter extension",
+      "group": "aero",
+      "kind": "length",
+      "min": 0,
+      "max": 0.2,
+      "step": 0.001,
+      "tooltip": "Length of the flat plate protruding ahead of the nose at floor level. High pressure above it and fast flow below produce front downforce."
+    },
+    {
+      "id": "spoilerAngle",
+      "label": "Rear spoiler angle",
+      "group": "aero",
+      "kind": "angle",
+      "min": 0,
+      "max": 70,
+      "step": 0.5,
+      "tooltip": "Inclination of the lip spoiler from horizontal. A steeper blade stands higher in the flow, raising deck pressure (less lift) at a drag cost."
+    },
+    {
+      "id": "spoilerHeight",
+      "label": "Rear spoiler height (blade)",
+      "group": "aero",
+      "kind": "length",
+      "min": 0,
+      "max": 0.25,
+      "step": 0.001,
+      "tooltip": "Blade length of the lip spoiler at the tail edge; its vertical rise is blade length x sin(angle). Zero removes the spoiler."
+    },
+    {
+      "id": "spoilerWidth",
+      "label": "Spoiler width",
+      "group": "aero",
+      "kind": "length",
+      "min": 0.5,
+      "max": 2.0,
+      "step": 0.01,
+      "tooltip": "Span of the lip spoiler (limited to the tail width). A wider spoiler acts on more of the deck."
+    },
+    {
+      "id": "wingChord",
+      "label": "Rear wing chord",
+      "group": "aero",
+      "kind": "length",
+      "min": 0,
+      "max": 0.45,
+      "step": 0.005,
+      "tooltip": "Chord of a separate rear wing mounted above the deck. Zero removes the wing."
+    },
+    {
+      "id": "wingAngle",
+      "label": "Rear wing angle",
+      "group": "aero",
+      "kind": "angle",
+      "min": -5,
+      "max": 25,
+      "step": 0.25,
+      "tooltip": "Wing angle of attack (trailing edge up is positive). Downforce rises roughly linearly until the wing stalls; induced drag rises with the square of its lift."
+    },
+    {
+      "id": "sideSkirtDepth",
+      "label": "Side skirt depth",
+      "group": "aero",
+      "kind": "length",
+      "min": 0,
+      "max": 0.1,
+      "step": 0.001,
+      "tooltip": "How far the sill skirts extend below the floor. Skirts limit air leaking in from the sides, which helps the underbody hold low pressure."
+    },
+    {
+      "id": "wheelDiameter",
+      "label": "Wheel diameter",
+      "group": "wheels",
+      "kind": "length",
+      "min": 0.55,
+      "max": 0.85,
+      "step": 0.005,
+      "tooltip": "Overall tyre diameter. Larger wheels need larger arch openings and also change the gearing (road speed per engine revolution)."
+    },
+    {
+      "id": "tireWidth",
+      "label": "Tire width",
+      "group": "wheels",
+      "kind": "length",
+      "min": 0.155,
+      "max": 0.345,
+      "step": 0.005,
+      "tooltip": "Tyre section width. Wider tyres present more frontal area to the flow below the body."
+    },
+    {
+      "id": "wheelExposure",
+      "label": "Wheel exposure",
+      "group": "wheels",
+      "kind": "ratio",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "tooltip": "0 = wheels shrouded with flush covers; 1 = open arches with the tyre standing proud of the body. Exposed rotating wheels are a major drag source."
+    },
+    {
+      "id": "mirrorWidth",
+      "label": "Door mirror width",
+      "group": "details",
+      "kind": "length",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.005,
+      "default": 0.2,
+      "tooltip": "Lateral span of each door mirror housing; 0 removes the mirrors (camera pods are a few centimetres wide). Mirrors add frontal area and a wake of their own, typically 3 to 5 % of a car's drag."
+    },
+    {
+      "id": "rimOpenness",
+      "label": "Rim openness",
+      "group": "details",
+      "kind": "ratio",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "default": 0.6,
+      "tooltip": "0 = closed aero covers; 1 = thin, widely spaced spokes. Open rims pump air through the rotating wheel and add ventilation drag in the wheelhouse."
+    },
+    {
+      "id": "grilleOpening",
+      "label": "Cooling intake area",
+      "group": "details",
+      "kind": "ratio",
+      "min": 0,
+      "max": 0.12,
+      "step": 0.002,
+      "default": 0.045,
+      "tooltip": "Open grille and intake area as a share of the frontal area. Air that passes through the radiator loses momentum, which is cooling drag. 0 = sealed front or closed shutters; electric cars need about a third of what a combustion car does."
+    }
+  ]
+}
